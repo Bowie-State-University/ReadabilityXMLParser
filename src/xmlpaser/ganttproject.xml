@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1423535992000" analysisTimestamp="1424086488852" release="">
+  <Project projectName="gannt">
+    <Jar>C:\works\ganttproject-code-0-e42a0beb16c07a89b186e83cdd288e037fb40bee\ganttproject\eclipsito.jar</Jar>
+    <AuxClasspathEntry>C:\works\ganttproject-code-0-e42a0beb16c07a89b186e83cdd288e037fb40bee\ganttproject\lib</AuxClasspathEntry>
+    <SrcDir>C:\works\ganttproject-code-0-e42a0beb16c07a89b186e83cdd288e037fb40bee\ganttproject\src</SrcDir>
+  </Project>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="org.bardsoftware.eclipsito.Boot">
+      <SourceLine classname="org.bardsoftware.eclipsito.Boot" sourcefile="Boot.java" sourcepath="org/bardsoftware/eclipsito/Boot.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.eclipsito.Boot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.bardsoftware.eclipsito.Boot" start="33" end="55" startBytecode="0" endBytecode="343" sourcefile="Boot.java" sourcepath="org/bardsoftware/eclipsito/Boot.java"/>
+    </Method>
+    <LocalVariable name="homelocation" register="3" pc="63" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.w3c.dom.Element" name="getAttribute" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.w3c.dom.Element" sourcefile="Element.java" sourcepath="org/w3c/dom/Element.java"/>
+    </Method>
+    <SourceLine classname="org.bardsoftware.eclipsito.Boot" start="37" end="37" startBytecode="64" endBytecode="64" sourcefile="Boot.java" sourcepath="org/bardsoftware/eclipsito/Boot.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="BC_IMPOSSIBLE_CAST" priority="1" rank="9" abbrev="BC" category="CORRECTNESS">
+    <Class classname="org.bardsoftware.impl.eclipsito.BundleClassLoader">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" name="parents" signature="()[Lorg/osgi/framework/Bundle;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" start="38" end="38" startBytecode="0" endBytecode="8" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    </Method>
+    <Type descriptor="[Lorg/bardsoftware/impl/eclipsito/BundleClassLoader;" role="TYPE_FOUND"/>
+    <Type descriptor="[Lorg/osgi/framework/Bundle;" role="TYPE_EXPECTED"/>
+    <Method classname="java.util.ArrayList" name="toArray" signature="([Ljava/lang/Object;)[Ljava/lang/Object;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.ArrayList" start="405" end="411" startBytecode="0" endBytecode="113" sourcefile="ArrayList.java" sourcepath="java/util/ArrayList.java"/>
+    </Method>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" start="38" end="38" startBytecode="17" endBytecode="17" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS">
+    <Class classname="org.bardsoftware.impl.eclipsito.BundleClassLoader">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" name="&lt;init&gt;" signature="([Ljava/net/URL;Ljava/lang/ClassLoader;)V" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" start="22" end="26" startBytecode="0" endBytecode="159" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    </Method>
+    <LocalVariable name="defaultUrls" register="1" pc="53" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" start="22" end="22" startBytecode="3" endBytecode="3" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" start="23" end="23" startBytecode="54" endBytecode="54" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED" priority="2" rank="18" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.BundleImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleImpl" sourcefile="BundleImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.BundleImpl" name="newClassLoader" signature="([Ljava/net/URL;Ljava/lang/ClassLoader;)Lorg/bardsoftware/impl/eclipsito/BundleClassLoader;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleImpl" start="214" end="214" startBytecode="0" endBytecode="71" sourcefile="BundleImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleImpl.java"/>
+    </Method>
+    <Class classname="org.bardsoftware.impl.eclipsito.BundleClassLoader">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleClassLoader" sourcefile="BundleClassLoader.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleClassLoader.java"/>
+    </Class>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.BundleImpl" start="214" end="214" startBytecode="0" endBytecode="0" sourcefile="BundleImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/BundleImpl.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="org.bardsoftware.impl.eclipsito.DescriptorParser">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.DescriptorParser" name="handleRequiresElements" signature="(Lorg/w3c/dom/NodeList;Lorg/bardsoftware/impl/eclipsito/PluginDescriptor;)V" isStatic="true">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" start="79" end="97" startBytecode="0" endBytecode="329" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java"/>
+    </Method>
+    <LocalVariable name="imports" register="3" pc="160" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.w3c.dom.Element" name="getElementsByTagName" signature="(Ljava/lang/String;)Lorg/w3c/dom/NodeList;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.w3c.dom.Element" sourcefile="Element.java" sourcepath="org/w3c/dom/Element.java"/>
+    </Method>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" start="88" end="88" startBytecode="161" endBytecode="161" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="org.bardsoftware.impl.eclipsito.DescriptorParser">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.DescriptorParser" name="handleRuntimeElements" signature="(Lorg/w3c/dom/NodeList;Lorg/bardsoftware/impl/eclipsito/PluginDescriptor;)V" isStatic="true">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" start="100" end="115" startBytecode="0" endBytecode="317" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java"/>
+    </Method>
+    <LocalVariable name="libraries" register="3" pc="152" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.w3c.dom.Element" name="getElementsByTagName" signature="(Ljava/lang/String;)Lorg/w3c/dom/NodeList;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.w3c.dom.Element" sourcefile="Element.java" sourcepath="org/w3c/dom/Element.java"/>
+    </Method>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.DescriptorParser" start="109" end="109" startBytecode="153" endBytecode="153" sourcefile="DescriptorParser.java" sourcepath="org/bardsoftware/impl/eclipsito/DescriptorParser.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ExtensionImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" name="getConfigurationElements" signature="()[Lorg/eclipse/core/runtime/IConfigurationElement;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" start="30" end="30" startBytecode="0" endBytecode="46" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" name="myConfigurationElements" signature="[Lorg/eclipse/core/runtime/IConfigurationElement;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" name="getChildren" signature="()[Lorg/eclipse/core/runtime/IConfigurationElement;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" start="120" end="120" startBytecode="0" endBytecode="60" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" name="myChildren" signature="[Lorg/eclipse/core/runtime/IConfigurationElement;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" start="120" end="120" startBytecode="18" endBytecode="18" sourcefile="ExtensionImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" sourcefile="ExtensionPointImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionPointImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" name="getExtensions" signature="()[Lorg/eclipse/core/runtime/IExtension;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" start="35" end="35" startBytecode="0" endBytecode="46" sourcefile="ExtensionPointImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionPointImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" name="myExtensions" signature="[Lorg/eclipse/core/runtime/IExtension;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" sourcefile="ExtensionPointImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionPointImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" start="35" end="35" startBytecode="4" endBytecode="4" sourcefile="ExtensionPointImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionPointImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" name="getExtensionPoints" signature="()[Lorg/eclipse/core/runtime/IExtensionPoint;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" start="59" end="59" startBytecode="0" endBytecode="46" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" name="myExtensionPoints" signature="[Lorg/eclipse/core/runtime/IExtensionPoint;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" start="59" end="59" startBytecode="4" endBytecode="4" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" name="&lt;init&gt;" signature="([Lorg/eclipse/core/runtime/IExtensionPoint;)V" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" start="14" end="16" startBytecode="0" endBytecode="69" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" name="myExtensionPoints" signature="[Lorg/eclipse/core/runtime/IExtensionPoint;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+    </Field>
+    <LocalVariable name="points" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" start="15" end="15" startBytecode="6" endBytecode="6" sourcefile="ExtensionRegistryImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ExtensionRegistryImpl.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.bardsoftware.impl.eclipsito.PlatformImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.PlatformImpl" sourcefile="PlatformImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/PlatformImpl.java"/>
+    </Class>
+    <Field classname="org.bardsoftware.impl.eclipsito.PlatformImpl" name="myHome" signature="Ljava/net/URI;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.PlatformImpl" sourcefile="PlatformImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/PlatformImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.PlatformImpl" start="21" end="21" startBytecode="10" endBytecode="10" sourcefile="PlatformImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/PlatformImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" sourcefile="ServiceReferenceImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ServiceReferenceImpl.java"/>
+    </Class>
+    <Method classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" name="getUsingBundles" signature="()[Lorg/osgi/framework/Bundle;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" start="25" end="25" startBytecode="0" endBytecode="46" sourcefile="ServiceReferenceImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ServiceReferenceImpl.java"/>
+    </Method>
+    <Field classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" name="myUsingBundles" signature="[Lorg/osgi/framework/Bundle;" isStatic="false">
+      <SourceLine classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" sourcefile="ServiceReferenceImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ServiceReferenceImpl.java"/>
+    </Field>
+    <SourceLine classname="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" start="25" end="25" startBytecode="4" endBytecode="4" sourcefile="ServiceReferenceImpl.java" sourcepath="org/bardsoftware/impl/eclipsito/ServiceReferenceImpl.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.BundleEvent">
+      <SourceLine classname="org.osgi.framework.BundleEvent" start="105" end="139" sourcefile="BundleEvent.java" sourcepath="org/osgi/framework/BundleEvent.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.BundleEvent">
+      <SourceLine classname="org.osgi.framework.BundleEvent" sourcefile="BundleEvent.java" sourcepath="org/osgi/framework/BundleEvent.java"/>
+    </Class>
+    <Field classname="org.osgi.framework.BundleEvent" name="type" signature="I" isStatic="false">
+      <SourceLine classname="org.osgi.framework.BundleEvent" sourcefile="BundleEvent.java" sourcepath="org/osgi/framework/BundleEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.FrameworkEvent">
+      <SourceLine classname="org.osgi.framework.FrameworkEvent" start="118" end="176" sourcefile="FrameworkEvent.java" sourcepath="org/osgi/framework/FrameworkEvent.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.FrameworkEvent">
+      <SourceLine classname="org.osgi.framework.FrameworkEvent" sourcefile="FrameworkEvent.java" sourcepath="org/osgi/framework/FrameworkEvent.java"/>
+    </Class>
+    <Field classname="org.osgi.framework.FrameworkEvent" name="type" signature="I" isStatic="false">
+      <SourceLine classname="org.osgi.framework.FrameworkEvent" sourcefile="FrameworkEvent.java" sourcepath="org/osgi/framework/FrameworkEvent.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.ServiceEvent">
+      <SourceLine classname="org.osgi.framework.ServiceEvent" start="105" end="134" sourcefile="ServiceEvent.java" sourcepath="org/osgi/framework/ServiceEvent.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.osgi.framework.ServiceEvent">
+      <SourceLine classname="org.osgi.framework.ServiceEvent" sourcefile="ServiceEvent.java" sourcepath="org/osgi/framework/ServiceEvent.java"/>
+    </Class>
+    <Field classname="org.osgi.framework.ServiceEvent" name="type" signature="I" isStatic="false">
+      <SourceLine classname="org.osgi.framework.ServiceEvent" sourcefile="ServiceEvent.java" sourcepath="org/osgi/framework/ServiceEvent.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 9 Feb 2015 21:39:52 -0500" total_classes="61" referenced_classes="217" total_bugs="19" total_size="1633" num_packages="5" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="9.17" clock_seconds="25.97" peak_mbytes="558.00" alloc_mbytes="683.00" gc_seconds="0.02" priority_2="18" priority_1="1">
+    <PackageStats package="org.bardsoftware.eclipsito" total_bugs="1" total_types="1" total_size="56" priority_2="1">
+      <ClassStats class="org.bardsoftware.eclipsito.Boot" sourceFile="Boot.java" interface="false" size="56" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.bardsoftware.impl.eclipsito" total_bugs="12" total_types="29" total_size="1123" priority_2="11" priority_1="1">
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ApplicationLauncher" sourceFile="ApplicationLauncher.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BootImpl" sourceFile="BootImpl.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BootImpl$1" sourceFile="BootImpl.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BootImpl$2" sourceFile="BootImpl.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BootImpl$ShutdownHook" sourceFile="BootImpl.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BundleClassLoader" sourceFile="BundleClassLoader.java" interface="false" size="54" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BundleClassLoader$1" sourceFile="BundleClassLoader.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.BundleImpl" sourceFile="BundleImpl.java" interface="false" size="121" bugs="1" priority_2="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.DependencyResolver" sourceFile="DependencyResolver.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.DependencyResolver$MarkedDescriptor" sourceFile="DependencyResolver.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.DescriptorParser" sourceFile="DescriptorParser.java" interface="false" size="90" bugs="2" priority_2="2"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ExtensionImpl" sourceFile="ExtensionImpl.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ExtensionImpl$ConfigurationElementImpl" sourceFile="ExtensionImpl.java" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ExtensionPointImpl" sourceFile="ExtensionPointImpl.java" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ExtensionRegistryImpl" sourceFile="ExtensionRegistryImpl.java" interface="false" size="57" bugs="2" priority_2="2"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ExtensionsProcessor" sourceFile="ExtensionsProcessor.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.InternalJobImpl" sourceFile="InternalJobImpl.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.InternalReloader" sourceFile="InternalReloader.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.InternalReloader$1" sourceFile="InternalReloader.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.JobManagerImpl" sourceFile="JobManagerImpl.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.JobManagerImpl$ConsoleProgressMonitor" sourceFile="JobManagerImpl.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.JobManagerImpl$GroupWorker" sourceFile="JobManagerImpl.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.JobManagerImpl$Semaphor" sourceFile="JobManagerImpl.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ModulesDirectoryProcessor" sourceFile="ModulesDirectoryProcessor.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ModulesDirectoryProcessor$1" sourceFile="ModulesDirectoryProcessor.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.PlatformImpl" sourceFile="PlatformImpl.java" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.PluginDescriptor" sourceFile="PluginDescriptor.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.PluginDescriptor$ExtensionPointDescriptor" sourceFile="PluginDescriptor.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.bardsoftware.impl.eclipsito.ServiceReferenceImpl" sourceFile="ServiceReferenceImpl.java" interface="false" size="18" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.eclipse.core.runtime" total_bugs="0" total_types="13" total_size="266">
+      <ClassStats class="org.eclipse.core.runtime.CoreException" sourceFile="CoreException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IAdaptable" sourceFile="IAdaptable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IConfigurationElement" sourceFile="IConfigurationElement.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IExtension" sourceFile="IExtension.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IExtensionPoint" sourceFile="IExtensionPoint.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IExtensionRegistry" sourceFile="IExtensionRegistry.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IModel" sourceFile="IModel.java" interface="true" size="68" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IPlatformRunnable" sourceFile="IPlatformRunnable.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IProgressMonitor" sourceFile="IProgressMonitor.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.IStatus" sourceFile="IStatus.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.Platform" sourceFile="Platform.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.Plugin" sourceFile="Plugin.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.Status" sourceFile="Status.java" interface="false" size="84" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.eclipse.core.runtime.jobs" total_bugs="0" total_types="3" total_size="23">
+      <ClassStats class="org.eclipse.core.runtime.jobs.IJobManager" sourceFile="IJobManager.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.jobs.Job" sourceFile="Job.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.eclipse.core.runtime.jobs.ProgressProvider" sourceFile="ProgressProvider.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.osgi.framework" total_bugs="6" total_types="15" total_size="165" priority_2="6">
+      <ClassStats class="org.osgi.framework.Bundle" sourceFile="Bundle.java" interface="true" size="25" bugs="0"/>
+      <ClassStats class="org.osgi.framework.BundleActivator" sourceFile="BundleActivator.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.osgi.framework.BundleContext" sourceFile="BundleContext.java" interface="true" size="22" bugs="0"/>
+      <ClassStats class="org.osgi.framework.BundleEvent" sourceFile="BundleEvent.java" interface="false" size="19" bugs="2" priority_2="2"/>
+      <ClassStats class="org.osgi.framework.BundleException" sourceFile="BundleException.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.osgi.framework.BundleListener" sourceFile="BundleListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.osgi.framework.Filter" sourceFile="Filter.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="org.osgi.framework.FrameworkEvent" sourceFile="FrameworkEvent.java" interface="false" size="26" bugs="2" priority_2="2"/>
+      <ClassStats class="org.osgi.framework.FrameworkListener" sourceFile="FrameworkListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.osgi.framework.InvalidSyntaxException" sourceFile="InvalidSyntaxException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.osgi.framework.Location" sourceFile="Location.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.osgi.framework.ServiceEvent" sourceFile="ServiceEvent.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="org.osgi.framework.ServiceListener" sourceFile="ServiceListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.osgi.framework.ServiceReference" sourceFile="ServiceReference.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.osgi.framework.ServiceRegistration" sourceFile="ServiceRegistration.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="575" invocations="925" avgMicrosecondsPerInvocation="622" maxMicrosecondsPerInvocation="61200" standardDeviationMircosecondsPerInvocation="2798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="124" invocations="921" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="3144" standardDeviationMircosecondsPerInvocation="249"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="80" invocations="2" avgMicrosecondsPerInvocation="40247" maxMicrosecondsPerInvocation="62695" standardDeviationMircosecondsPerInvocation="22448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="64" invocations="217" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="4570" standardDeviationMircosecondsPerInvocation="580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="55" invocations="785" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="605" standardDeviationMircosecondsPerInvocation="87"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="32" invocations="279" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="1430" standardDeviationMircosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="30" invocations="296" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="1560" standardDeviationMircosecondsPerInvocation="164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="28" invocations="279" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="1005" standardDeviationMircosecondsPerInvocation="143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="27" invocations="279" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1114" standardDeviationMircosecondsPerInvocation="154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="24" invocations="294" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="823" standardDeviationMircosecondsPerInvocation="121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="20" invocations="252" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="1502" standardDeviationMircosecondsPerInvocation="141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="20" invocations="217" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="10028" standardDeviationMircosecondsPerInvocation="678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="18" invocations="279" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="975" standardDeviationMircosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.AtomicityProblem" totalMilliseconds="17" invocations="61" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="14597" standardDeviationMircosecondsPerInvocation="1848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="17" invocations="868" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="390" standardDeviationMircosecondsPerInvocation="32"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="16" invocations="188" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="609" standardDeviationMircosecondsPerInvocation="103"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

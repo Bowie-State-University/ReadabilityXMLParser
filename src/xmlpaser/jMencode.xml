@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1180246556000" analysisTimestamp="1424663445322" release="">
+  <Project projectName="jmencode">
+    <Jar>C:\works\JMencode_v0.64\JMEncode.jar</Jar>
+    <AuxClasspathEntry>C:\works\JMencode_v0.64\lib\swing-layout-1.0.1.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="Execute" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="56" end="75" startBytecode="0" endBytecode="366" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ExecProgram" start="56" end="56" startBytecode="11" endBytecode="11" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="Execute" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="56" end="75" startBytecode="0" endBytecode="366" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ExecProgram" start="60" end="60" startBytecode="46" endBytecode="46" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="ExecuteM" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="100" end="188" startBytecode="0" endBytecode="402" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ExecProgram" start="109" end="109" startBytecode="46" endBytecode="46" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    <SourceLine classname="jmencode.ExecProgram" start="111" end="111" startBytecode="72" endBytecode="72" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="ExecuteM" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="100" end="188" startBytecode="0" endBytecode="402" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ExecProgram" start="186" end="186" startBytecode="175" endBytecode="175" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="Execute" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="56" end="75" startBytecode="0" endBytecode="76" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="jmencode.ExecProgram" start="61" end="61" startBytecode="51" endBytecode="51" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="ExecuteM" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="100" end="188" startBytecode="0" endBytecode="402" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Field classname="jmencode.ExecProgram" name="outputLines" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ExecProgram" start="112" end="112" startBytecode="88" endBytecode="88" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="ExecuteM" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="100" end="188" startBytecode="0" endBytecode="402" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Field classname="jmencode.ExecProgram" name="stderr" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ExecProgram" start="111" end="111" startBytecode="78" endBytecode="78" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram" name="ExecuteM" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" start="100" end="188" startBytecode="0" endBytecode="402" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Field classname="jmencode.ExecProgram" name="stdout" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ExecProgram" start="109" end="109" startBytecode="52" endBytecode="52" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="paused" signature="Z" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ExecProgram" start="43" end="43" startBytecode="6" endBytecode="6" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="frame" signature="Ljavax/swing/JFrame;" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="mplayerThread" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="proc2" signature="Ljava/lang/Process;" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="stderr2" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.ExecProgram">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Field classname="jmencode.ExecProgram" name="stdout2" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.ExecProgram" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.ExecProgram$1">
+      <SourceLine classname="jmencode.ExecProgram$1" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Class>
+    <Method classname="jmencode.ExecProgram$1" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ExecProgram$1" start="116" end="150" startBytecode="0" endBytecode="500" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ExecProgram$1" start="116" end="116" startBytecode="14" endBytecode="14" sourcefile="ExecProgram.java" sourcepath="jmencode/ExecProgram.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="saveImage" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="321" end="335" startBytecode="0" endBytecode="56" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <LocalVariable name="imTy" register="4" pc="25" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="324" end="324" startBytecode="23" endBytecode="23" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="imTy"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="setRectfromCropSettings" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="151" end="173" startBytecode="0" endBytecode="345" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="155" end="155" startBytecode="20" endBytecode="20" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="162" end="162" startBytecode="108" endBytecode="108" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Field classname="jmencode.ImgPreviewPanel" name="croph" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropw" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropx" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropy" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="doCropCalc" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="138" end="145" startBytecode="0" endBytecode="260" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.ImgPreviewPanel" name="croph" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="141" end="141" startBytecode="111" endBytecode="111" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="doCropCalc" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="138" end="145" startBytecode="0" endBytecode="260" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropw" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="140" end="140" startBytecode="90" endBytecode="90" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="doCropCalc" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="138" end="145" startBytecode="0" endBytecode="260" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropx" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="142" end="142" startBytecode="138" endBytecode="138" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="doCropCalc" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="138" end="145" startBytecode="0" endBytecode="260" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.ImgPreviewPanel" name="cropy" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="143" end="143" startBytecode="178" endBytecode="178" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="setCrop" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="130" end="134" startBytecode="0" endBytecode="90" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.VideoTitle" name="croph" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="131" end="131" startBytecode="13" endBytecode="13" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="setCrop" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="130" end="134" startBytecode="0" endBytecode="90" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.VideoTitle" name="cropw" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="130" end="130" startBytecode="5" endBytecode="5" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="setCrop" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="130" end="134" startBytecode="0" endBytecode="90" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.VideoTitle" name="cropx" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="132" end="132" startBytecode="21" endBytecode="21" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.ImgPreviewPanel">
+      <SourceLine classname="jmencode.ImgPreviewPanel" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Class>
+    <Method classname="jmencode.ImgPreviewPanel" name="setCrop" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.ImgPreviewPanel" start="130" end="134" startBytecode="0" endBytecode="90" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+    </Method>
+    <Field classname="jmencode.VideoTitle" name="cropy" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.ImgPreviewPanel" start="133" end="133" startBytecode="29" endBytecode="29" sourcefile="ImgPreviewPanel.java" sourcepath="jmencode/ImgPreviewPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.LogPanel">
+      <SourceLine classname="jmencode.LogPanel" sourcefile="LogPanel.java" sourcepath="jmencode/LogPanel.java"/>
+    </Class>
+    <Method classname="jmencode.LogPanel" name="load" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.LogPanel" start="95" end="111" startBytecode="0" endBytecode="274" sourcefile="LogPanel.java" sourcepath="jmencode/LogPanel.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.LogPanel" start="97" end="97" startBytecode="23" endBytecode="23" sourcefile="LogPanel.java" sourcepath="jmencode/LogPanel.java"/>
+    <SourceLine classname="jmencode.LogPanel" start="100" end="100" startBytecode="51" endBytecode="51" sourcefile="LogPanel.java" sourcepath="jmencode/LogPanel.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="1" rank="14" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" start="3105" end="3115" startBytecode="0" endBytecode="100" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="jmencode.MainGUI" start="3107" end="3107" startBytecode="9" endBytecode="9" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <SourceLine classname="jmencode.MainGUI" start="3107" end="3107" startBytecode="9" endBytecode="9" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="aboutMenuItemActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2592" end="2603" startBytecode="0" endBytecode="17" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <LocalVariable name="splashFrame" register="2" pc="27" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MainGUI" start="2595" end="2595" startBytecode="26" endBytecode="26" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="splashFrame"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="previewVideo" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2338" end="2413" startBytecode="0" endBytecode="67" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <LocalVariable name="playinputcomm" register="5" pc="52" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MainGUI" start="2340" end="2340" startBytecode="50" endBytecode="50" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="playinputcomm"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="quit" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="3080" end="3081" startBytecode="0" endBytecode="50" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MainGUI" start="3080" end="3080" startBytecode="1" endBytecode="1" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="2" rank="16" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="extractAudio" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2440" end="2484" startBytecode="0" endBytecode="120" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="copy" role="STRING_CONSTANT"/>
+    <LocalVariable name="option" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="jmencode.MainGUI" start="2440" end="2440" startBytecode="3" endBytecode="3" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="2" rank="16" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="extractAudio" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2440" end="2484" startBytecode="0" endBytecode="120" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="play" role="STRING_CONSTANT"/>
+    <LocalVariable name="option" register="1" pc="185" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="jmencode.MainGUI" start="2449" end="2449" startBytecode="188" endBytecode="188" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="2" rank="16" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="extractAudio" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2440" end="2484" startBytecode="0" endBytecode="120" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="wav" role="STRING_CONSTANT"/>
+    <LocalVariable name="option" register="1" pc="104" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="jmencode.MainGUI" start="2446" end="2446" startBytecode="106" endBytecode="106" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="2" rank="16" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="makePreviewClip" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="2315" end="2330" startBytecode="0" endBytecode="153" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="input" role="STRING_CONSTANT"/>
+    <LocalVariable name="option" register="1" pc="81" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="jmencode.MainGUI" start="2317" end="2317" startBytecode="84" endBytecode="84" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Field classname="jmencode.MainGUI" name="muxpanel" signature="Ljmencode/MuxerForm;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Field classname="jmencode.MainGUI" name="procProgressBar" signature="Ljavax/swing/JProgressBar;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Field classname="jmencode.MainGUI" name="progresslabel" signature="Ljavax/swing/JLabel;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="bcalcform" signature="Ljmencode/BitrateCalcForm;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="78" end="78" startBytecode="160" endBytecode="160" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="lnfframe" signature="Ljavax/swing/JFrame;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="75" end="75" startBytecode="140" endBytecode="140" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="log" signature="Ljmencode/LogPanel;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="72" end="72" startBytecode="123" endBytecode="123" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="mplayercontrol" signature="Ljmencode/MplayerController;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="80" end="80" startBytecode="181" endBytecode="181" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="muxpanel" signature="Ljmencode/MuxerForm;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="73" end="73" startBytecode="133" endBytecode="133" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="prevsetupform" signature="Ljmencode/RescaleOptionsForm;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="79" end="79" startBytecode="171" endBytecode="171" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MainGUI">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Class>
+    <Method classname="jmencode.MainGUI" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MainGUI" start="58" end="85" startBytecode="0" endBytecode="330" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Method>
+    <Field classname="jmencode.MainGUI" name="setupform" signature="Ljmencode/SettingsForm;" isStatic="true">
+      <SourceLine classname="jmencode.MainGUI" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MainGUI" start="77" end="77" startBytecode="150" endBytecode="150" sourcefile="MainGUI.java" sourcepath="jmencode/MainGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="&lt;init&gt;" signature="(Ljava/lang/Process;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="49" end="52" startBytecode="0" endBytecode="13" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <LocalVariable name="p" register="1" pc="19" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MplayerController" start="50" end="50" startBytecode="18" endBytecode="18" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.CACHING_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="p"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="seekto" signature="(I)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="178" end="185" startBytecode="0" endBytecode="40" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <LocalVariable name="randomPercent" register="3" pc="50" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MplayerController" start="179" end="179" startBytecode="49" endBytecode="49" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="randomPercent"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="195" end="195" startBytecode="35" endBytecode="35" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    <SourceLine classname="jmencode.MplayerController" start="197" end="197" startBytecode="61" endBytecode="61" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="fastButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="281" end="285" startBytecode="0" endBytecode="115" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="281" end="281" startBytecode="11" endBytecode="11" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="muteButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="264" end="271" startBytecode="0" endBytecode="127" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="264" end="264" startBytecode="11" endBytecode="11" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="pauseButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="293" end="298" startBytecode="0" endBytecode="119" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="293" end="293" startBytecode="11" endBytecode="11" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="seekto" signature="(I)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="178" end="185" startBytecode="0" endBytecode="200" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="178" end="178" startBytecode="11" endBytecode="11" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="slowButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="274" end="278" startBytecode="0" endBytecode="115" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="274" end="274" startBytecode="11" endBytecode="11" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController" start="259" end="259" startBytecode="162" endBytecode="162" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="1" rank="6" abbrev="IP" category="CORRECTNESS">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="&lt;init&gt;" signature="(Ljava/lang/Process;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="49" end="52" startBytecode="0" endBytecode="13" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <LocalVariable name="p" register="1" pc="19" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MplayerController" start="50" end="50" startBytecode="18" endBytecode="18" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="fastButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="281" end="285" startBytecode="0" endBytecode="14" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="jmencode.MplayerController" start="281" end="281" startBytecode="0" endBytecode="0" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="muteButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="264" end="271" startBytecode="0" endBytecode="19" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="jmencode.MplayerController" start="264" end="264" startBytecode="0" endBytecode="0" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="pauseButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="293" end="298" startBytecode="0" endBytecode="20" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="jmencode.MplayerController" start="293" end="293" startBytecode="0" endBytecode="0" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="seekto" signature="(I)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="178" end="185" startBytecode="0" endBytecode="40" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="jmencode.MplayerController" start="178" end="178" startBytecode="0" endBytecode="0" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="slowButtonActionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="274" end="278" startBytecode="0" endBytecode="14" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="46" end="152" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Type>
+    <SourceLine classname="jmencode.MplayerController" start="274" end="274" startBytecode="0" endBytecode="0" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Field classname="jmencode.MplayerController" name="outputLines" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MplayerController" start="198" end="198" startBytecode="77" endBytecode="77" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Field classname="jmencode.MplayerController" name="stderr" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MplayerController" start="197" end="197" startBytecode="67" endBytecode="67" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="ExecuteM" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="190" end="261" startBytecode="0" endBytecode="371" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Field classname="jmencode.MplayerController" name="stdout" signature="Ljava/io/BufferedReader;" isStatic="true">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MplayerController" start="195" end="195" startBytecode="41" endBytecode="41" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ" priority="1" rank="1" abbrev="UR" category="CORRECTNESS">
+    <Class classname="jmencode.MplayerController">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController" name="&lt;init&gt;" signature="(Ljava/lang/Process;)V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" start="49" end="52" startBytecode="0" endBytecode="95" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Field classname="jmencode.MplayerController" name="proc" signature="Ljava/lang/Process;" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Field>
+    <LocalVariable name="p" register="1" pc="0" role="LOCAL_VARIABLE_DID_YOU_MEAN"/>
+    <SourceLine classname="jmencode.MplayerController" start="50" end="50" startBytecode="15" endBytecode="15" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.MplayerController$8">
+      <SourceLine classname="jmencode.MplayerController$8" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerController$8" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MplayerController$8" start="202" end="223" startBytecode="0" endBytecode="364" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="jmencode.MplayerController$8" start="202" end="202" startBytecode="14" endBytecode="14" sourcefile="MplayerController.java" sourcepath="jmencode/MplayerController.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.MplayerParser">
+      <SourceLine classname="jmencode.MplayerParser" sourcefile="MplayerParser.java" sourcepath="jmencode/MplayerParser.java"/>
+    </Class>
+    <Method classname="jmencode.MplayerParser" name="parseVideoInfo" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.MplayerParser" start="65" end="111" startBytecode="0" endBytecode="141" sourcefile="MplayerParser.java" sourcepath="jmencode/MplayerParser.java"/>
+    </Method>
+    <LocalVariable name="curraudid" register="2" pc="204" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.MplayerParser" start="94" end="94" startBytecode="203" endBytecode="203" sourcefile="MplayerParser.java" sourcepath="jmencode/MplayerParser.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="curraudid"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="jmencode.MuxerForm">
+      <SourceLine classname="jmencode.MuxerForm" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Class>
+    <Method classname="jmencode.MuxerForm" name="updateCommand" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MuxerForm" start="76" end="93" startBytecode="0" endBytecode="145" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <Field classname="jmencode.MuxerForm" name="chapterfilename" signature="Ljava/lang/String;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="jmencode.MuxerForm" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MuxerForm" start="78" end="78" startBytecode="91" endBytecode="91" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    <SourceLine classname="jmencode.MuxerForm" start="83" end="83" startBytecode="238" endBytecode="238" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ" priority="2" rank="3" abbrev="UR" category="CORRECTNESS">
+    <Class classname="jmencode.MuxerForm">
+      <SourceLine classname="jmencode.MuxerForm" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Class>
+    <Method classname="jmencode.MuxerForm" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="jmencode.MuxerForm" start="44" end="56" startBytecode="0" endBytecode="197" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Method>
+    <Field classname="jmencode.MuxerForm" name="muxvideoinputname" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="jmencode.MuxerForm" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+    </Field>
+    <SourceLine classname="jmencode.MuxerForm" start="46" end="46" startBytecode="42" endBytecode="42" sourcefile="MuxerForm.java" sourcepath="jmencode/MuxerForm.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="saveSettingstoFile" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="152" end="168" startBytecode="0" endBytecode="50" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <LocalVariable name="l_Names" register="5" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.Settings" start="152" end="152" startBytecode="7" endBytecode="7" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="l_Names"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="425" end="442" startBytecode="0" endBytecode="45" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <LocalVariable name="s" register="4" pc="87" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.Settings" start="437" end="437" startBytecode="85" endBytecode="85" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="s"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="parseVideoInfo" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="363" end="409" startBytecode="0" endBytecode="141" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <LocalVariable name="curraudid" register="2" pc="204" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.Settings" start="392" end="392" startBytecode="203" endBytecode="203" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="curraudid"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="loadSettingsfromFile" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="181" end="236" startBytecode="0" endBytecode="892" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.Settings" start="183" end="183" startBytecode="24" endBytecode="24" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <SourceLine classname="jmencode.Settings" start="186" end="186" startBytecode="52" endBytecode="52" sourcefile="Settings.java" sourcepath="jmencode/Settings.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="425" end="442" startBytecode="0" endBytecode="273" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="jmencode.Settings" start="426" end="426" startBytecode="19" endBytecode="19" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="saveSettingstoFile" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="152" end="168" startBytecode="0" endBytecode="278" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="jmencode.Settings" start="156" end="156" startBytecode="24" endBytecode="24" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <SourceLine classname="jmencode.Settings" start="158" end="158" startBytecode="44" endBytecode="44" sourcefile="Settings.java" sourcepath="jmencode/Settings.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="DARlist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="49" end="49" startBytecode="325" endBytecode="325" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="abitratelist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="41" end="41" startBytecode="129" endBytecode="129" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="acodecslist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="40" end="40" startBytecode="102" endBytecode="102" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="aspratiolist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="48" end="48" startBytecode="303" endBytecode="303" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="codecslist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="38" end="38" startBytecode="37" endBytecode="37" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="containerlist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="42" end="42" startBytecode="156" endBytecode="156" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="fitsizeslist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="50" end="50" startBytecode="357" endBytecode="357" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="fourcclist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="39" end="39" startBytecode="75" endBytecode="75" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="languagelist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="44" end="44" startBytecode="195" endBytecode="195" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="muxerlist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="43" end="43" startBytecode="173" endBytecode="173" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="noframeslist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="47" end="47" startBytecode="265" endBytecode="265" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="scalerlist" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="45" end="45" startBytecode="233" endBytecode="233" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="titlelist" signature="[Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="51" end="51" startBytecode="371" endBytecode="371" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="LAMEpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="95" end="95" startBytecode="547" endBytecode="547" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="MP4Boxpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="100" end="100" startBytecode="567" endBytecode="567" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mencoderpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="96" end="96" startBytecode="552" endBytecode="552" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mkvmergepath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="99" end="99" startBytecode="562" endBytecode="562" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mplayerpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="98" end="98" startBytecode="557" endBytecode="557" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="audbitrate" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="82" end="82" startBytecode="507" endBytecode="507" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="audcodec" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="58" end="58" startBytecode="391" endBytecode="391" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="audiofileoutput" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="audquality" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="83" end="83" startBytecode="512" endBytecode="512" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="audtrack" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="72" end="72" startBytecode="460" endBytecode="460" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="bitrate" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="81" end="81" startBytecode="501" endBytecode="501" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="codec" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="59" end="59" startBytecode="396" endBytecode="396" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="container" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="57" end="57" startBytecode="386" endBytecode="386" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="crop" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="65" end="65" startBytecode="428" endBytecode="428" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="domuxing" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="68" end="68" startBytecode="440" endBytecode="440" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="dovolumegain" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="70" end="70" startBytecode="448" endBytecode="448" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="dvddev" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="56" end="56" startBytecode="381" endBytecode="381" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="dvdtitle" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="72" end="72" startBytecode="456" endBytecode="456" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="fileinputname" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="fileoutputname" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="54" end="54" startBytecode="376" endBytecode="376" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="fourcc" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="61" end="61" startBytecode="406" endBytecode="406" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="lavccodec" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="60" end="60" startBytecode="401" endBytecode="401" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="length" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="73" end="73" startBytecode="473" endBytecode="473" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="passes" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="85" end="85" startBytecode="520" endBytecode="520" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="prevframes" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="72" end="72" startBytecode="464" endBytecode="464" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="prevstarttime" signature="F" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="74" end="74" startBytecode="478" endBytecode="478" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="resize" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="64" end="64" startBytecode="424" endBytecode="424" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="scaleh" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="78" end="78" startBytecode="491" endBytecode="491" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="scalew" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="78" end="78" startBytecode="487" endBytecode="487" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="selecttime" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="66" end="66" startBytecode="432" endBytecode="432" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="starttime" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="62" end="62" startBytecode="411" endBytecode="411" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="stepsize" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="72" end="72" startBytecode="468" endBytecode="468" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="sws" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="79" end="79" startBytecode="495" endBytecode="495" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="targetsize" signature="F" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="75" end="75" startBytecode="483" endBytecode="483" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="titlechanged" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="69" end="69" startBytecode="444" endBytecode="444" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="unsharp" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="71" end="71" startBytecode="452" endBytecode="452" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="usediscinput" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="63" end="63" startBytecode="420" endBytecode="420" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="usemod16" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="67" end="67" startBytecode="436" endBytecode="436" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="volgain" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="84" end="84" startBytecode="516" endBytecode="516" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="cfgpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="osname" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="37" end="37" startBytecode="15" endBytecode="15" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="version" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+    <SourceLine classname="jmencode.Settings" start="35" end="35" startBytecode="2" endBytecode="2" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mencoderpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mkvmergepath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Field classname="jmencode.Settings" name="Mplayerpath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="CalculateBitrate" signature="(I)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="279" end="285" startBytecode="0" endBytecode="131" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NS_NON_SHORT_CIRCUIT" priority="2" rank="17" abbrev="NS" category="STYLE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="setScaleValues" signature="(I)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="330" end="353" startBytecode="0" endBytecode="304" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <SourceLine classname="jmencode.Settings" start="333" end="333" startBytecode="55" endBytecode="55" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    <SourceLine classname="jmencode.Settings" start="342" end="342" startBytecode="136" endBytecode="136" sourcefile="Settings.java" sourcepath="jmencode/Settings.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="jmencode.Settings">
+      <SourceLine classname="jmencode.Settings" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Class>
+    <Method classname="jmencode.Settings" name="loadSettingsfromFile" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.Settings" start="181" end="236" startBytecode="0" endBytecode="892" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+    </Method>
+    <SourceLine classname="jmencode.Settings" start="202" end="202" startBytecode="176" endBytecode="176" sourcefile="Settings.java" sourcepath="jmencode/Settings.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="jmencode.SplashWindow">
+      <SourceLine classname="jmencode.SplashWindow" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java"/>
+    </Class>
+    <Field classname="jmencode.SplashWindow" name="paintCalled" signature="Z" isStatic="false">
+      <SourceLine classname="jmencode.SplashWindow" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="jmencode.SplashWindow" start="113" end="113" startBytecode="60" endBytecode="60" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="jmencode.SplashWindow" start="114" end="114" startBytecode="68" endBytecode="68" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="jmencode.SplashWindow$1" start="79" end="79" startBytecode="12" endBytecode="12" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="jmencode.SplashWindow" start="142" end="142" startBytecode="37" endBytecode="37" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS">
+    <Class classname="jmencode.SplashWindow">
+      <SourceLine classname="jmencode.SplashWindow" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java"/>
+    </Class>
+    <Method classname="jmencode.SplashWindow" name="paint" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="jmencode.SplashWindow" start="106" end="117" startBytecode="0" endBytecode="189" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java"/>
+    </Method>
+    <SourceLine classname="jmencode.SplashWindow" start="115" end="115" startBytecode="76" endBytecode="76" sourcefile="SplashWindow.java" sourcepath="jmencode/SplashWindow.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Method classname="jmencode.VideoTitle" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" start="253" end="256" startBytecode="0" endBytecode="4" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Method>
+    <LocalVariable name="info" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="jmencode.VideoTitle" start="253" end="253" startBytecode="7" endBytecode="7" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="info"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="actualaspectratio" signature="D" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="45" end="45" startBytecode="31" endBytecode="31" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="cropdetectable" signature="Z" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="56" end="56" startBytecode="55" endBytecode="55" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="croph" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="49" end="49" startBytecode="43" endBytecode="43" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="cropw" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="49" end="49" startBytecode="39" endBytecode="39" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="cropx" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="49" end="49" startBytecode="47" endBytecode="47" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="cropy" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="49" end="49" startBytecode="51" endBytecode="51" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="error" signature="D" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="46" end="46" startBytecode="35" endBytecode="35" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="fps" signature="F" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="inputDAR" signature="D" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="43" end="43" startBytecode="23" endBytecode="23" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="inputh" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="inputw" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="notitles" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="36" end="36" startBytecode="9" endBytecode="9" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="targetaspectratio" signature="D" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="44" end="44" startBytecode="27" endBytecode="27" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="type" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="37" end="37" startBytecode="14" endBytecode="14" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="videolength" signature="I" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="vidformat" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="38" end="38" startBytecode="19" endBytecode="19" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="audtracks" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="96" end="96" startBytecode="66" endBytecode="66" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle" name="subtracks" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+    <SourceLine classname="jmencode.VideoTitle" start="97" end="97" startBytecode="77" endBytecode="77" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="jmencode.VideoTitle">
+      <SourceLine classname="jmencode.VideoTitle" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Method classname="jmencode.VideoTitle" name="print" signature="()Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="jmencode.VideoTitle" start="154" end="178" startBytecode="0" endBytecode="474" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Method>
+    <SourceLine classname="jmencode.VideoTitle" start="174" end="174" startBytecode="333" endBytecode="333" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.VideoTitle$Subtrack">
+      <SourceLine classname="jmencode.VideoTitle$Subtrack" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle$Subtrack" name="id" signature="I" isStatic="false">
+      <SourceLine classname="jmencode.VideoTitle$Subtrack" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="jmencode.VideoTitle$Subtrack">
+      <SourceLine classname="jmencode.VideoTitle$Subtrack" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Class>
+    <Field classname="jmencode.VideoTitle$Subtrack" name="lang" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="jmencode.VideoTitle$Subtrack" sourcefile="VideoTitle.java" sourcepath="jmencode/VideoTitle.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 27 May 2007 02:15:56 -0400" total_classes="156" referenced_classes="566" total_bugs="163" total_size="4749" num_packages="1" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="6.53" clock_seconds="28.65" peak_mbytes="618.16" alloc_mbytes="683.00" gc_seconds="0.16" priority_2="137" priority_1="26">
+    <PackageStats package="jmencode" total_bugs="163" total_types="156" total_size="4749" priority_2="137" priority_1="26">
+      <ClassStats class="jmencode.BitrateCalcForm" sourceFile="BitrateCalcForm.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="jmencode.BitrateCalcForm$1" sourceFile="BitrateCalcForm.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.ExecProgram" sourceFile="ExecProgram.java" interface="false" size="98" bugs="14" priority_2="11" priority_1="3"/>
+      <ClassStats class="jmencode.ExecProgram$1" sourceFile="ExecProgram.java" interface="false" size="31" bugs="1" priority_1="1"/>
+      <ClassStats class="jmencode.ExecProgram$2" sourceFile="ExecProgram.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="jmencode.ImgPreviewPanel" sourceFile="ImgPreviewPanel.java" interface="false" size="190" bugs="14" priority_2="14"/>
+      <ClassStats class="jmencode.ImgPreviewPanel$1" sourceFile="ImgPreviewPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="jmencode.ImgPreviewPanel$2" sourceFile="ImgPreviewPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="jmencode.ImgPreviewPanel$3" sourceFile="ImgPreviewPanel.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="jmencode.ImgPreviewPanel$4" sourceFile="ImgPreviewPanel.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.LNFSetter" sourceFile="LNFSetter.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="jmencode.LogPanel" sourceFile="LogPanel.java" interface="false" size="54" bugs="1" priority_1="1"/>
+      <ClassStats class="jmencode.LogPanel$1" sourceFile="LogPanel.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI" sourceFile="MainGUI.java" interface="false" size="1607" bugs="18" priority_2="17" priority_1="1"/>
+      <ClassStats class="jmencode.MainGUI$1" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$10" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$11" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$12" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$13" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$14" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$15" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$16" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$17" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$18" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$19" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$2" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$20" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$21" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$22" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$23" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$24" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$25" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$26" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$27" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$28" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$29" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$3" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$30" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$31" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$32" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$33" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$34" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$35" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$36" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$37" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$38" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$39" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$4" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$40" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$41" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$42" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$43" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$44" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$45" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$46" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$47" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$48" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$49" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$5" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$50" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$51" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$52" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$53" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$54" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$55" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$56" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$57" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$58" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$59" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$6" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$60" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$61" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$62" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$63" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$64" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$65" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$66" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$67" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$68" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$69" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$7" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$70" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$71" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$72" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$73" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$74" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$75" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$76" sourceFile="MainGUI.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$77" sourceFile="MainGUI.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$78" sourceFile="MainGUI.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$79" sourceFile="MainGUI.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$8" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$80" sourceFile="MainGUI.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.MainGUI$9" sourceFile="MainGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController" sourceFile="MplayerController.java" interface="false" size="153" bugs="20" priority_2="11" priority_1="9"/>
+      <ClassStats class="jmencode.MplayerController$1" sourceFile="MplayerController.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$10" sourceFile="MplayerController.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$2" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$3" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$4" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$5" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$6" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$7" sourceFile="MplayerController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MplayerController$8" sourceFile="MplayerController.java" interface="false" size="21" bugs="1" priority_1="1"/>
+      <ClassStats class="jmencode.MplayerController$9" sourceFile="MplayerController.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="jmencode.MplayerParser" sourceFile="MplayerParser.java" interface="false" size="83" bugs="1" priority_2="1"/>
+      <ClassStats class="jmencode.MuxerForm" sourceFile="MuxerForm.java" interface="false" size="360" bugs="2" priority_2="2"/>
+      <ClassStats class="jmencode.MuxerForm$1" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$10" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$11" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$12" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$13" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$14" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$15" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$16" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$17" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$18" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$19" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$2" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$20" sourceFile="MuxerForm.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$21" sourceFile="MuxerForm.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$3" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$4" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$5" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$6" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$7" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$8" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.MuxerForm$9" sourceFile="MuxerForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.PreviewSetupForm" sourceFile="PreviewSetupForm.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="jmencode.PreviewSetupForm$1" sourceFile="PreviewSetupForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.PreviewSetupForm$2" sourceFile="PreviewSetupForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.PreviewSetupForm$3" sourceFile="PreviewSetupForm.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="jmencode.RescaleOptionsForm" sourceFile="RescaleOptionsForm.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="jmencode.RescaleOptionsForm$1" sourceFile="RescaleOptionsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.RescaleOptionsForm$2" sourceFile="RescaleOptionsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.RescaleOptionsForm$3" sourceFile="RescaleOptionsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.RescaleOptionsForm$4" sourceFile="RescaleOptionsForm.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="jmencode.Settings" sourceFile="Settings.java" interface="false" size="325" bugs="67" priority_2="60" priority_1="7"/>
+      <ClassStats class="jmencode.SettingsForm" sourceFile="SettingsForm.java" interface="false" size="162" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$1" sourceFile="SettingsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$2" sourceFile="SettingsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$3" sourceFile="SettingsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$4" sourceFile="SettingsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$5" sourceFile="SettingsForm.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="jmencode.SettingsForm$6" sourceFile="SettingsForm.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="jmencode.SplashWindow" sourceFile="SplashWindow.java" interface="false" size="48" bugs="2" priority_2="2"/>
+      <ClassStats class="jmencode.SplashWindow$1" sourceFile="SplashWindow.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jmencode.SwingWorker" sourceFile="SwingWorker.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="jmencode.SwingWorker$1" sourceFile="SwingWorker.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="jmencode.SwingWorker$2" sourceFile="SwingWorker.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="jmencode.SwingWorker$ThreadVar" sourceFile="SwingWorker.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="jmencode.VideoInfoForm" sourceFile="VideoInfoForm.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="jmencode.VideoInfoForm$1" sourceFile="VideoInfoForm.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="jmencode.VideoTitle" sourceFile="VideoTitle.java" interface="false" size="114" bugs="20" priority_2="17" priority_1="3"/>
+      <ClassStats class="jmencode.VideoTitle$Audiotrack" sourceFile="VideoTitle.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="jmencode.VideoTitle$Subtrack" sourceFile="VideoTitle.java" interface="false" size="6" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="459" invocations="2033" avgMicrosecondsPerInvocation="226" maxMicrosecondsPerInvocation="126175" standardDeviationMircosecondsPerInvocation="2830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="197" invocations="566" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="6170" standardDeviationMircosecondsPerInvocation="679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="124" invocations="2038" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="13520" standardDeviationMircosecondsPerInvocation="525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="119" invocations="1638" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="1830" standardDeviationMircosecondsPerInvocation="124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="96" invocations="2" avgMicrosecondsPerInvocation="48333" maxMicrosecondsPerInvocation="60750" standardDeviationMircosecondsPerInvocation="12417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="84" invocations="686" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="12501" standardDeviationMircosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="71" invocations="686" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="5753" standardDeviationMircosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="70" invocations="686" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="9156" standardDeviationMircosecondsPerInvocation="456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="64" invocations="706" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="5297" standardDeviationMircosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="56" invocations="565" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1876" standardDeviationMircosecondsPerInvocation="181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="51" invocations="705" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="2864" standardDeviationMircosecondsPerInvocation="207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="47" invocations="635" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="844" standardDeviationMircosecondsPerInvocation="106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="43" invocations="687" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="2094" standardDeviationMircosecondsPerInvocation="129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="39" invocations="562" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="2004" standardDeviationMircosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="1982" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="731" standardDeviationMircosecondsPerInvocation="41"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="36" invocations="566" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="1244" standardDeviationMircosecondsPerInvocation="128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="35" invocations="566" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="896" standardDeviationMircosecondsPerInvocation="105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="33" invocations="643" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="2244" standardDeviationMircosecondsPerInvocation="143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="33" invocations="566" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="788" standardDeviationMircosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="32" invocations="553" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="5213" standardDeviationMircosecondsPerInvocation="354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="29" invocations="156" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="8440" standardDeviationMircosecondsPerInvocation="728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="27" invocations="565" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="1172" standardDeviationMircosecondsPerInvocation="101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="23" invocations="565" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="846" standardDeviationMircosecondsPerInvocation="85"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="21" invocations="156" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="11168" standardDeviationMircosecondsPerInvocation="939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="17" invocations="156" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="8680" standardDeviationMircosecondsPerInvocation="720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="17" invocations="156" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="7199" standardDeviationMircosecondsPerInvocation="592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="16" invocations="156" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="9118" standardDeviationMircosecondsPerInvocation="731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="16" invocations="156" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="6086" standardDeviationMircosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="16" invocations="156" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="5241" standardDeviationMircosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="16" invocations="686" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="1014" standardDeviationMircosecondsPerInvocation="61"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="14" invocations="156" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="2449" standardDeviationMircosecondsPerInvocation="293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="14" invocations="156" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="5345" standardDeviationMircosecondsPerInvocation="439"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

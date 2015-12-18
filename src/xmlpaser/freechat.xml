@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1406829728000" analysisTimestamp="1424086765873" release="">
+  <Project projectName="freechart">
+    <Jar>C:\works\jfreechart-1.0.19\jfreechart-1.0.19-demo.jar</Jar>
+    <AuxClasspathEntry>C:\works\jfreechart-1.0.19\lib</AuxClasspathEntry>
+    <SrcDir>C:\works\jfreechart-1.0.19\source</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.orsoncharts.demo.SVGDemo1">
+      <SourceLine classname="com.orsoncharts.demo.SVGDemo1"/>
+    </Class>
+    <Method classname="com.orsoncharts.demo.SVGDemo1" name="createScatterDataset" signature="(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/orsoncharts/data/xyz/XYZDataset;" isStatic="true">
+      <SourceLine classname="com.orsoncharts.demo.SVGDemo1"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="com.orsoncharts.demo.SVGDemo1" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="demo.AnnotationDemo1">
+      <SourceLine classname="demo.AnnotationDemo1"/>
+    </Class>
+    <Method classname="demo.AnnotationDemo1" name="createDataset" signature="()Lorg/jfree/data/xy/XYSeriesCollection;" isStatic="true">
+      <SourceLine classname="demo.AnnotationDemo1"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="demo.AnnotationDemo1" startBytecode="26" endBytecode="26"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="demo.AnnotationDemo1">
+      <SourceLine classname="demo.AnnotationDemo1"/>
+    </Class>
+    <Method classname="demo.AnnotationDemo1" name="createDataset" signature="()Lorg/jfree/data/xy/XYSeriesCollection;" isStatic="true">
+      <SourceLine classname="demo.AnnotationDemo1" startBytecode="0" endBytecode="272"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="demo.AnnotationDemo1" startBytecode="8" endBytecode="8"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.BarChartDemo3">
+      <SourceLine classname="demo.BarChartDemo3"/>
+    </Class>
+    <Method classname="demo.BarChartDemo3" name="createChart" signature="(Lorg/jfree/data/category/CategoryDataset;)Lorg/jfree/chart/JFreeChart;" isStatic="true">
+      <SourceLine classname="demo.BarChartDemo3"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.BarChartDemo3" startBytecode="361" endBytecode="361"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.BarChartDemo3$CustomRenderer">
+      <SourceLine classname="demo.BarChartDemo3$CustomRenderer"/>
+    </Class>
+    <SourceLine classname="demo.BarChartDemo3$CustomRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.BarRenderer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.BarRenderer" start="1326" end="1375" startBytecode="0" endBytecode="430" sourcefile="BarRenderer.java" sourcepath="org/jfree/chart/renderer/category/BarRenderer.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.BarChartDemo9$CustomBarRenderer">
+      <SourceLine classname="demo.BarChartDemo9$CustomBarRenderer"/>
+    </Class>
+    <SourceLine classname="demo.BarChartDemo9$CustomBarRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.BarRenderer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.BarRenderer" start="1326" end="1375" startBytecode="0" endBytecode="430" sourcefile="BarRenderer.java" sourcepath="org/jfree/chart/renderer/category/BarRenderer.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.CandlestickChartDemo1">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Class>
+    <Method classname="demo.CandlestickChartDemo1" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="clear" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1983" end="1989" startBytecode="0" endBytecode="112" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.CandlestickChartDemo1" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Field>
+    <SourceLine classname="demo.CandlestickChartDemo1" startBytecode="3" endBytecode="3"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.CandlestickChartDemo1">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Class>
+    <Method classname="demo.CandlestickChartDemo1" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="set" signature="(IIIII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1931" end="1936" startBytecode="0" endBytecode="78" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.CandlestickChartDemo1" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.CandlestickChartDemo1"/>
+    </Field>
+    <SourceLine classname="demo.CandlestickChartDemo1" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS">
+    <Class classname="demo.CloneTest1">
+      <SourceLine classname="demo.CloneTest1"/>
+    </Class>
+    <Method classname="demo.CloneTest1" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="demo.CloneTest1"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="55" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="demo.CloneTest1" startBytecode="67" endBytecode="67" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="demo.CloneTest1" startBytecode="58" endBytecode="58" role="SOURCE_LINE_KNOWN_NULL"/>
+    <SourceLine classname="demo.CloneTest1" startBytecode="62" endBytecode="62" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.CrosshairDemo1$MyDemoPanel">
+      <SourceLine classname="demo.CrosshairDemo1$MyDemoPanel"/>
+    </Class>
+    <Method classname="demo.CrosshairDemo1$MyDemoPanel" name="chartProgress" signature="(Lorg/jfree/chart/event/ChartProgressEvent;)V" isStatic="false">
+      <SourceLine classname="demo.CrosshairDemo1$MyDemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="demo.CrosshairDemo1$MyDemoPanel" startBytecode="84" endBytecode="84"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.CrosshairDemo2$MyDemoPanel">
+      <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel"/>
+    </Class>
+    <Method classname="demo.CrosshairDemo2$MyDemoPanel" name="chartChanged" signature="(Lorg/jfree/chart/event/ChartChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel" startBytecode="85" endBytecode="85"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.CrosshairDemo2$MyDemoPanel">
+      <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel"/>
+    </Class>
+    <Method classname="demo.CrosshairDemo2$MyDemoPanel" name="chartProgress" signature="(Lorg/jfree/chart/event/ChartProgressEvent;)V" isStatic="false">
+      <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="demo.CrosshairDemo2$MyDemoPanel" startBytecode="85" endBytecode="85"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.CylinderChartDemo1$CustomCylinderRenderer">
+      <SourceLine classname="demo.CylinderChartDemo1$CustomCylinderRenderer"/>
+    </Class>
+    <SourceLine classname="demo.CylinderChartDemo1$CustomCylinderRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.BarRenderer3D" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.BarRenderer3D" start="795" end="811" startBytecode="0" endBytecode="194" sourcefile="BarRenderer3D.java" sourcepath="org/jfree/chart/renderer/category/BarRenderer3D.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.CylinderChartDemo2$CustomCylinderRenderer">
+      <SourceLine classname="demo.CylinderChartDemo2$CustomCylinderRenderer"/>
+    </Class>
+    <SourceLine classname="demo.CylinderChartDemo2$CustomCylinderRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.BarRenderer3D" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.BarRenderer3D" start="795" end="811" startBytecode="0" endBytecode="194" sourcefile="BarRenderer3D.java" sourcepath="org/jfree/chart/renderer/category/BarRenderer3D.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo1$DemoPanel">
+      <SourceLine classname="demo.DialDemo1$DemoPanel"/>
+    </Class>
+    <Method classname="demo.DialDemo1$DemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo1$DemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo1$DemoPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo2$MyDemoPanel">
+      <SourceLine classname="demo.DialDemo2$MyDemoPanel"/>
+    </Class>
+    <Method classname="demo.DialDemo2$MyDemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo2$MyDemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo2$MyDemoPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo2a$DemoPanelA">
+      <SourceLine classname="demo.DialDemo2a$DemoPanelA"/>
+    </Class>
+    <Method classname="demo.DialDemo2a$DemoPanelA" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo2a$DemoPanelA"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo2a$DemoPanelA" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo2a$DemoPanelB">
+      <SourceLine classname="demo.DialDemo2a$DemoPanelB"/>
+    </Class>
+    <Method classname="demo.DialDemo2a$DemoPanelB" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo2a$DemoPanelB"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo2a$DemoPanelB" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo3$DemoPanel">
+      <SourceLine classname="demo.DialDemo3$DemoPanel"/>
+    </Class>
+    <Method classname="demo.DialDemo3$DemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo3$DemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo3$DemoPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo4$DemoPanel">
+      <SourceLine classname="demo.DialDemo4$DemoPanel"/>
+    </Class>
+    <Method classname="demo.DialDemo4$DemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo4$DemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo4$DemoPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DialDemo5$DemoPanel">
+      <SourceLine classname="demo.DialDemo5$DemoPanel"/>
+    </Class>
+    <Method classname="demo.DialDemo5$DemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.DialDemo5$DemoPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.DialDemo5$DemoPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.DifferenceChartDemo2">
+      <SourceLine classname="demo.DifferenceChartDemo2"/>
+    </Class>
+    <Method classname="demo.DifferenceChartDemo2" name="time" signature="(II)Ljava/lang/Long;" isStatic="true">
+      <SourceLine classname="demo.DifferenceChartDemo2"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="demo.DifferenceChartDemo2" startBytecode="23" endBytecode="23"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.EventFrequencyDemo1">
+      <SourceLine classname="demo.EventFrequencyDemo1"/>
+    </Class>
+    <Method classname="demo.EventFrequencyDemo1" name="createDataset" signature="()Lorg/jfree/data/category/CategoryDataset;" isStatic="true">
+      <SourceLine classname="demo.EventFrequencyDemo1"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="demo.EventFrequencyDemo1" startBytecode="110" endBytecode="110"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.ExtendedStackedBarRenderer">
+      <SourceLine classname="demo.ExtendedStackedBarRenderer"/>
+    </Class>
+    <SourceLine classname="demo.ExtendedStackedBarRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.StackedBarRenderer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.StackedBarRenderer" start="418" end="428" startBytecode="0" endBytecode="145" sourcefile="StackedBarRenderer.java" sourcepath="org/jfree/chart/renderer/category/StackedBarRenderer.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.HighLowChartDemo1">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Class>
+    <Method classname="demo.HighLowChartDemo1" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="clear" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1983" end="1989" startBytecode="0" endBytecode="112" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.HighLowChartDemo1" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Field>
+    <SourceLine classname="demo.HighLowChartDemo1" startBytecode="3" endBytecode="3"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.HighLowChartDemo1">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Class>
+    <Method classname="demo.HighLowChartDemo1" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="set" signature="(IIIII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1931" end="1936" startBytecode="0" endBytecode="78" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.HighLowChartDemo1" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo1"/>
+    </Field>
+    <SourceLine classname="demo.HighLowChartDemo1" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.HighLowChartDemo2">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Class>
+    <Method classname="demo.HighLowChartDemo2" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="clear" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1983" end="1989" startBytecode="0" endBytecode="112" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.HighLowChartDemo2" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Field>
+    <SourceLine classname="demo.HighLowChartDemo2" startBytecode="3" endBytecode="3"/>
+  </BugInstance>
+  <BugInstance type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" priority="2" rank="14" abbrev="STCAL" category="MT_CORRECTNESS">
+    <Class classname="demo.HighLowChartDemo2">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Class>
+    <Method classname="demo.HighLowChartDemo2" name="createDate" signature="(IIIII)Ljava/util/Date;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Method>
+    <Method classname="java.util.Calendar" name="set" signature="(IIIII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Calendar" start="1931" end="1936" startBytecode="0" endBytecode="78" sourcefile="Calendar.java" sourcepath="java/util/Calendar.java"/>
+    </Method>
+    <Field classname="demo.HighLowChartDemo2" name="calendar" signature="Ljava/util/Calendar;" isStatic="true">
+      <SourceLine classname="demo.HighLowChartDemo2"/>
+    </Field>
+    <SourceLine classname="demo.HighLowChartDemo2" startBytecode="17" endBytecode="17"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.ItemLabelDemo2$LabelGenerator">
+      <SourceLine classname="demo.ItemLabelDemo2$LabelGenerator"/>
+    </Class>
+    <Method classname="demo.ItemLabelDemo2$LabelGenerator" name="&lt;init&gt;" signature="(I)V" isStatic="false">
+      <SourceLine classname="demo.ItemLabelDemo2$LabelGenerator"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.ItemLabelDemo2$LabelGenerator" startBytecode="6" endBytecode="6"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.ItemLabelDemo5$MyStackedBarRenderer">
+      <SourceLine classname="demo.ItemLabelDemo5$MyStackedBarRenderer"/>
+    </Class>
+    <SourceLine classname="demo.ItemLabelDemo5$MyStackedBarRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.StackedBarRenderer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.StackedBarRenderer" start="418" end="428" startBytecode="0" endBytecode="145" sourcefile="StackedBarRenderer.java" sourcepath="org/jfree/chart/renderer/category/StackedBarRenderer.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY">
+    <Class classname="demo.JDBCCategoryChartDemo">
+      <SourceLine classname="demo.JDBCCategoryChartDemo"/>
+    </Class>
+    <Method classname="demo.JDBCCategoryChartDemo" name="readData" signature="()Lorg/jfree/data/category/CategoryDataset;" isStatic="false">
+      <SourceLine classname="demo.JDBCCategoryChartDemo" startBytecode="0" endBytecode="64"/>
+    </Method>
+    <SourceLine classname="demo.JDBCCategoryChartDemo" startBytecode="40" endBytecode="40"/>
+  </BugInstance>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY">
+    <Class classname="demo.JDBCPieChartDemo">
+      <SourceLine classname="demo.JDBCPieChartDemo"/>
+    </Class>
+    <Method classname="demo.JDBCPieChartDemo" name="readData" signature="()Lorg/jfree/data/general/PieDataset;" isStatic="false">
+      <SourceLine classname="demo.JDBCPieChartDemo" startBytecode="0" endBytecode="52"/>
+    </Method>
+    <SourceLine classname="demo.JDBCPieChartDemo" startBytecode="40" endBytecode="40"/>
+  </BugInstance>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY">
+    <Class classname="demo.JDBCXYChartDemo">
+      <SourceLine classname="demo.JDBCXYChartDemo"/>
+    </Class>
+    <Method classname="demo.JDBCXYChartDemo" name="readData" signature="()Lorg/jfree/data/xy/XYDataset;" isStatic="false">
+      <SourceLine classname="demo.JDBCXYChartDemo" startBytecode="0" endBytecode="52"/>
+    </Method>
+    <SourceLine classname="demo.JDBCXYChartDemo" startBytecode="40" endBytecode="40"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.MeterChartDemo2$1">
+      <SourceLine classname="demo.MeterChartDemo2$1"/>
+    </Class>
+    <Method classname="demo.MeterChartDemo2$1" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.MeterChartDemo2$1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.MeterChartDemo2$1" startBytecode="19" endBytecode="19"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.MouseOverDemo1$MyBarRenderer">
+      <SourceLine classname="demo.MouseOverDemo1$MyBarRenderer"/>
+    </Class>
+    <SourceLine classname="demo.MouseOverDemo1$MyBarRenderer" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.renderer.category.BarRenderer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.renderer.category.BarRenderer" start="1326" end="1375" startBytecode="0" endBytecode="430" sourcefile="BarRenderer.java" sourcepath="org/jfree/chart/renderer/category/BarRenderer.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.Second">
+      <SourceLine classname="demo.Second"/>
+    </Class>
+    <Method classname="demo.Second" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="demo.Second"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.Second" startBytecode="26" endBytecode="26"/>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="demo.SerializationTest1">
+      <SourceLine classname="demo.SerializationTest1"/>
+    </Class>
+    <Method classname="demo.SerializationTest1" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="demo.SerializationTest1"/>
+    </Method>
+    <SourceLine classname="demo.SerializationTest1" startBytecode="90" endBytecode="90"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS">
+    <Class classname="demo.SerializationTest1">
+      <SourceLine classname="demo.SerializationTest1"/>
+    </Class>
+    <Method classname="demo.SerializationTest1" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="demo.SerializationTest1"/>
+    </Method>
+    <LocalVariable name="?" register="4" pc="49" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="demo.SerializationTest1" startBytecode="145" endBytecode="145" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="demo.SerializationTest1" startBytecode="50" endBytecode="50" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="demo.SlidingGanttDatasetDemo1$DemoPanel">
+      <SourceLine classname="demo.SlidingGanttDatasetDemo1$DemoPanel"/>
+    </Class>
+    <Method classname="demo.SlidingGanttDatasetDemo1$DemoPanel" name="createDataset" signature="()Lorg/jfree/data/gantt/GanttCategoryDataset;" isStatic="true">
+      <SourceLine classname="demo.SlidingGanttDatasetDemo1$DemoPanel"/>
+    </Method>
+    <SourceLine classname="demo.SlidingGanttDatasetDemo1$DemoPanel" startBytecode="41" endBytecode="41"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="demo.SuperDemo">
+      <SourceLine classname="demo.SuperDemo"/>
+    </Class>
+    <Method classname="demo.SuperDemo" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="demo.SuperDemo"/>
+    </Method>
+    <SourceLine classname="demo.SuperDemo" startBytecode="174" endBytecode="174"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.ThermometerDemo1$ContentPanel">
+      <SourceLine classname="demo.ThermometerDemo1$ContentPanel"/>
+    </Class>
+    <Method classname="demo.ThermometerDemo1$ContentPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.ThermometerDemo1$ContentPanel"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.ThermometerDemo1$ContentPanel" startBytecode="15" endBytecode="15"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.TimeSeriesDemo7">
+      <SourceLine classname="demo.TimeSeriesDemo7"/>
+    </Class>
+    <Method classname="demo.TimeSeriesDemo7" name="createChart" signature="(Lorg/jfree/data/xy/XYDataset;)Lorg/jfree/chart/JFreeChart;" isStatic="true">
+      <SourceLine classname="demo.TimeSeriesDemo7"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.TimeSeriesDemo7" startBytecode="50" endBytecode="50"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.TimeSeriesDemo8">
+      <SourceLine classname="demo.TimeSeriesDemo8"/>
+    </Class>
+    <Method classname="demo.TimeSeriesDemo8" name="createChart" signature="(Lorg/jfree/data/xy/XYDataset;)Lorg/jfree/chart/JFreeChart;" isStatic="true">
+      <SourceLine classname="demo.TimeSeriesDemo8"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.TimeSeriesDemo8" startBytecode="56" endBytecode="56"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.WindChartDemo1">
+      <SourceLine classname="demo.WindChartDemo1"/>
+    </Class>
+    <Method classname="demo.WindChartDemo1" name="createItem" signature="(JII)[Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="demo.WindChartDemo1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.WindChartDemo1" startBytecode="22" endBytecode="22"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.XYAreaChartDemo1">
+      <SourceLine classname="demo.XYAreaChartDemo1"/>
+    </Class>
+    <Method classname="demo.XYAreaChartDemo1" name="createDataset" signature="()Lorg/jfree/data/xy/XYDataset;" isStatic="true">
+      <SourceLine classname="demo.XYAreaChartDemo1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.XYAreaChartDemo1" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.XYAreaRenderer2Demo1">
+      <SourceLine classname="demo.XYAreaRenderer2Demo1"/>
+    </Class>
+    <Method classname="demo.XYAreaRenderer2Demo1" name="createDataset" signature="()Lorg/jfree/data/xy/XYDataset;" isStatic="true">
+      <SourceLine classname="demo.XYAreaRenderer2Demo1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.XYAreaRenderer2Demo1" startBytecode="16" endBytecode="16"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.XYBarChartDemo1">
+      <SourceLine classname="demo.XYBarChartDemo1"/>
+    </Class>
+    <Method classname="demo.XYBarChartDemo1" name="createDataset" signature="()Lorg/jfree/data/xy/IntervalXYDataset;" isStatic="true">
+      <SourceLine classname="demo.XYBarChartDemo1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.XYBarChartDemo1" startBytecode="30" endBytecode="30"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="demo.XYSeriesDemo1">
+      <SourceLine classname="demo.XYSeriesDemo1"/>
+    </Class>
+    <Method classname="demo.XYSeriesDemo1" name="createChart" signature="(Lorg/jfree/data/xy/XYDataset;)Lorg/jfree/chart/JFreeChart;" isStatic="true">
+      <SourceLine classname="demo.XYSeriesDemo1"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="demo.XYSeriesDemo1" startBytecode="78" endBytecode="78"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.YieldCurveDemo1$CustomDateAxis">
+      <SourceLine classname="demo.YieldCurveDemo1$CustomDateAxis"/>
+    </Class>
+    <SourceLine classname="demo.YieldCurveDemo1$CustomDateAxis" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="org.jfree.chart.axis.DateAxis" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="org.jfree.chart.axis.DateAxis" start="1926" end="1953" startBytecode="0" endBytecode="273" sourcefile="DateAxis.java" sourcepath="org/jfree/chart/axis/DateAxis.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_NO_HASHCODE" priority="2" rank="16" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="demo.orsoncharts.HighlightCategoryColorSource">
+      <SourceLine classname="demo.orsoncharts.HighlightCategoryColorSource"/>
+    </Class>
+    <Method classname="demo.orsoncharts.HighlightCategoryColorSource" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="demo.orsoncharts.HighlightCategoryColorSource"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="demo.orsoncharts.HighlightXYZColorSource">
+      <SourceLine classname="demo.orsoncharts.HighlightXYZColorSource"/>
+    </Class>
+    <SourceLine classname="demo.orsoncharts.HighlightXYZColorSource" start="1" end="1" startBytecode="0" endBytecode="0"/>
+    <Method classname="com.orsoncharts.renderer.xyz.StandardXYZColorSource" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="com.orsoncharts.renderer.xyz.StandardXYZColorSource" start="124" end="139" startBytecode="0" endBytecode="214" sourcefile="StandardXYZColorSource.java" sourcepath="com/orsoncharts/renderer/xyz/StandardXYZColorSource.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="demo.orsoncharts.ScatterPlot3D3">
+      <SourceLine classname="demo.orsoncharts.ScatterPlot3D3"/>
+    </Class>
+    <Method classname="demo.orsoncharts.ScatterPlot3D3" name="createDataset" signature="(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/orsoncharts/data/xyz/XYZDataset;" isStatic="true">
+      <SourceLine classname="demo.orsoncharts.ScatterPlot3D3"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="demo.orsoncharts.ScatterPlot3D3" startBytecode="11" endBytecode="11"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel">
+      <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel"/>
+    </Class>
+    <Method classname="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel"/>
+    </Method>
+    <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel" startBytecode="103" endBytecode="103"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE">
+    <Class classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel">
+      <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel"/>
+    </Class>
+    <Method classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel" name="stateChanged" signature="(Ljavax/swing/event/ChangeEvent;)V" isStatic="false">
+      <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel"/>
+    </Method>
+    <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel" startBytecode="66" endBytecode="66"/>
+    <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel" startBytecode="123" endBytecode="123" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel" startBytecode="184" endBytecode="184" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="demo.orsoncharts.swing.OrsonChartsDemo">
+      <SourceLine classname="demo.orsoncharts.swing.OrsonChartsDemo"/>
+    </Class>
+    <Method classname="demo.orsoncharts.swing.OrsonChartsDemo" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="demo.orsoncharts.swing.OrsonChartsDemo"/>
+    </Method>
+    <SourceLine classname="demo.orsoncharts.swing.OrsonChartsDemo" startBytecode="13" endBytecode="13"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 31 Jul 2014 14:02:08 -0400" total_classes="456" referenced_classes="1420" total_bugs="55" total_size="29442" num_packages="4" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="18.17" clock_seconds="21.41" peak_mbytes="615.81" alloc_mbytes="683.00" gc_seconds="0.15" priority_2="49" priority_1="6">
+    <PackageStats package="com.orsoncharts.demo" total_bugs="1" total_types="1" total_size="228" priority_1="1">
+      <ClassStats class="com.orsoncharts.demo.SVGDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="228" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="demo" total_bugs="48" total_types="386" total_size="26806" priority_2="46" priority_1="2">
+      <ClassStats class="demo.Animator" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.AnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="119" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="demo.AnnotationDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="89" bugs="0"/>
+      <ClassStats class="demo.AreaChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="58" bugs="0"/>
+      <ClassStats class="demo.AxisOffsetsDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="63" bugs="0"/>
+      <ClassStats class="demo.BarChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="0"/>
+      <ClassStats class="demo.BarChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.BarChart3DDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.BarChart3DDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.BarChart3DDemo4$CustomBarRenderer3D" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo10" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo11" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="58" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.BarChartDemo3$CustomRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.BarChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo7$LabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo8" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo9" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="demo.BarChartDemo9$CustomBarRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.BoxAndWhiskerChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.BoxAndWhiskerChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.BubbleChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="demo.BubbleChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="0"/>
+      <ClassStats class="demo.CandlestickChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="280" bugs="2" priority_2="2"/>
+      <ClassStats class="demo.CanvasExportTask" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="demo.CategoryLabelPositionsDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="64" bugs="0"/>
+      <ClassStats class="demo.CategoryLabelPositionsDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="demo.CategoryLabelPositionsDemo1$2" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="demo.CategoryLabelPositionsDemo1$3" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="demo.CategoryLabelPositionsDemo1$4" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="demo.CategoryMarkerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.CategoryMarkerDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.CategoryPointerAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.CategoryStepChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="demo.ChartPanelSerializationTest" sourceFile="&lt;Unknown&gt;" interface="false" size="109" bugs="0"/>
+      <ClassStats class="demo.ChartTiming1" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.ChartTiming2" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.ChartTiming3" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="demo.ChartTiming4" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.CircleDrawer" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.CloneTest1" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.ClusteredXYBarRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="87" bugs="0"/>
+      <ClassStats class="demo.CombinedCategoryPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="75" bugs="0"/>
+      <ClassStats class="demo.CombinedCategoryPlotDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="demo.CombinedTimeSeriesDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="170" bugs="0"/>
+      <ClassStats class="demo.CombinedTimeSeriesDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="821" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="97" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="684" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="94" bugs="0"/>
+      <ClassStats class="demo.CombinedXYPlotDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="88" bugs="0"/>
+      <ClassStats class="demo.CompareToPreviousYearDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="90" bugs="0"/>
+      <ClassStats class="demo.CompassDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="21" bugs="0"/>
+      <ClassStats class="demo.CompassFormatDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="0"/>
+      <ClassStats class="demo.CompassFormatDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.CompassFormatDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="99" bugs="0"/>
+      <ClassStats class="demo.CrossSectionDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="demo.CrossSectionDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="123" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo1$DemoTableModel" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="118" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.CrosshairDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo2$DemoTableModel" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="183" bugs="2" priority_2="2"/>
+      <ClassStats class="demo.CrosshairDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo3$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="105" bugs="0"/>
+      <ClassStats class="demo.CrosshairDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo2$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="demo.CrosshairOverlayDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.CylinderChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.CylinderChartDemo1$CustomCylinderRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.CylinderChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.CylinderChartDemo2$CustomCylinderRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.CylinderRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="94" bugs="0"/>
+      <ClassStats class="demo.DefaultXYDatasetDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.DefaultXYDatasetDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.DemoDescription" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="demo.DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="demo.DeviationRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="demo.DeviationRendererDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="demo.DeviationRendererDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="demo.DialDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DialDemo1$DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="66" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DialDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="95" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo2a" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="demo.DialDemo2a$DemoPanelA" sourceFile="&lt;Unknown&gt;" interface="false" size="65" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo2a$DemoPanelB" sourceFile="&lt;Unknown&gt;" interface="false" size="91" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DialDemo3$DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DialDemo4$DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DialDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DialDemo5$DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="70" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DifferenceChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.DifferenceChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="1824" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.DrawStringDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="122" bugs="0"/>
+      <ClassStats class="demo.DrawStringPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="86" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="114" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="69" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo5$1" sourceFile="&lt;Unknown&gt;" interface="false" size="12" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="demo.DualAxisDemo6$1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="63" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.DynamicDataDemo3$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="75" bugs="0"/>
+      <ClassStats class="demo.EventFrequencyDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.ExtendedStackedBarRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="127" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.FastScatterPlotDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="demo.First" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="demo.Function2DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.Function2DDemo1$X2" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.GanttDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="119" bugs="0"/>
+      <ClassStats class="demo.GanttDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="93" bugs="0"/>
+      <ClassStats class="demo.GanttDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="124" bugs="0"/>
+      <ClassStats class="demo.GanttDemo3$MyLabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.GradientPaintTransformerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="demo.GridBandDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.HideSeriesDemo3$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="70" bugs="0"/>
+      <ClassStats class="demo.HighLowChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="280" bugs="2" priority_2="2"/>
+      <ClassStats class="demo.HighLowChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="283" bugs="2" priority_2="2"/>
+      <ClassStats class="demo.HighLowChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="92" bugs="0"/>
+      <ClassStats class="demo.HistogramDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="demo.HistogramDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.InternalFrameDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="demo.IntervalBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo1$LabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="10" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo2$LabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.ItemLabelDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo5$1" sourceFile="&lt;Unknown&gt;" interface="false" size="1" bugs="0"/>
+      <ClassStats class="demo.ItemLabelDemo5$MyStackedBarRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.JDBCCategoryChartDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.JDBCPieChartDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.JDBCXYChartDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.LayeredBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="demo.LayeredBarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="demo.LegendTitleToImageDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="demo.LegendTitleToImageDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.LegendWrapperDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.LineChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="80" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.LineChartDemo8" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="0"/>
+      <ClassStats class="demo.LogAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.LogarithmicAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.LogarithmicAxisDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.MarkerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="101" bugs="0"/>
+      <ClassStats class="demo.MarkerDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="127" bugs="0"/>
+      <ClassStats class="demo.MemoryUsageDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="0"/>
+      <ClassStats class="demo.MemoryUsageDemo$1" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.MemoryUsageDemo$DataGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.MeterChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="0"/>
+      <ClassStats class="demo.MeterChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="0"/>
+      <ClassStats class="demo.MeterChartDemo2$1" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.MeterChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="50" bugs="0"/>
+      <ClassStats class="demo.MeterChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="demo.MinMaxCategoryPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.MouseListenerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.MouseListenerDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="demo.MouseListenerDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="106" bugs="0"/>
+      <ClassStats class="demo.MouseListenerDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="0"/>
+      <ClassStats class="demo.MouseOverDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="demo.MouseOverDemo1$MyBarRenderer" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.MouseOverDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="demo.MovingAverageDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="0"/>
+      <ClassStats class="demo.MultipleAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="0"/>
+      <ClassStats class="demo.MultipleAxisDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.MultipleAxisDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="demo.MultipleAxisDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="demo.MultipleDatasetDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.MultipleDatasetDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.MultiplePieChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.MultiplePieChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.MultiplePieChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="0"/>
+      <ClassStats class="demo.MultiplePieChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="demo.NormalDistributionDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="demo.NormalDistributionDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="demo.OverlaidBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="0"/>
+      <ClassStats class="demo.OverlaidBarChartDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="5" bugs="0"/>
+      <ClassStats class="demo.OverlaidBarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.OverlaidXYPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="93" bugs="0"/>
+      <ClassStats class="demo.OverlaidXYPlotDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="132" bugs="0"/>
+      <ClassStats class="demo.PDFChartTransferable" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="demo.ParetoChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.PerformanceTest1" sourceFile="&lt;Unknown&gt;" interface="false" size="104" bugs="0"/>
+      <ClassStats class="demo.PeriodAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="106" bugs="0"/>
+      <ClassStats class="demo.PeriodAxisDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="78" bugs="0"/>
+      <ClassStats class="demo.PeriodAxisDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="0"/>
+      <ClassStats class="demo.PieChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.PieChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="0"/>
+      <ClassStats class="demo.PieChart3DDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.PieChart3DDemo3$CustomLabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="6" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="69" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo4$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo7$Rotator" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo8" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="0"/>
+      <ClassStats class="demo.PieChartDemo8$CustomLabelGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="demo.PlotOrientationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.PlotOrientationDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="68" bugs="0"/>
+      <ClassStats class="demo.PlotOrientationDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="demo.PlotOrientationDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="59" bugs="0"/>
+      <ClassStats class="demo.PolarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.PopulationChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.PriceVolumeDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="900" bugs="0"/>
+      <ClassStats class="demo.PriceVolumeDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="371" bugs="0"/>
+      <ClassStats class="demo.QuarterDateFormatDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="103" bugs="0"/>
+      <ClassStats class="demo.RegressionDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.RegressionDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="0"/>
+      <ClassStats class="demo.RelativeDateFormatDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.RelativeDateFormatDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.RingChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.RingChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="43" bugs="0"/>
+      <ClassStats class="demo.Rotator" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="demo.SVGExportTask" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.SampleXYDataset" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.SampleXYDataset2" sourceFile="&lt;Unknown&gt;" interface="false" size="82" bugs="0"/>
+      <ClassStats class="demo.SampleXYZDataset" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.SampleXYZDataset2" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo3$MyChartMouseListener" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.ScatterPlotDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.ScatterRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="demo.Second" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.SerializationTest1" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="demo.SimpleIntervalXYDataset" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.SimpleIntervalXYDataset2" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.SlidingCategoryDatasetDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.SlidingCategoryDatasetDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.SlidingCategoryDatasetDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.SlidingCategoryDatasetDemo2$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.SlidingGanttDatasetDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.SlidingGanttDatasetDemo1$DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.SmallNumberDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.SparklineDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.SpiderWebChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="demo.StackedAreaChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="62" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="67" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.StackedBarChart3DDemo5$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="101" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="80" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="39" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="122" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.StackedBarChartDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.StackedBarDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="demo.StackedBarDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="20" bugs="0"/>
+      <ClassStats class="demo.StackedBarDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="demo.StackedXYAreaChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.StackedXYAreaChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.StackedXYAreaChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="59" bugs="0"/>
+      <ClassStats class="demo.StackedXYAreaRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.StackedXYBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.StackedXYBarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="120" bugs="0"/>
+      <ClassStats class="demo.StackedXYBarChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="0"/>
+      <ClassStats class="demo.StatisticalBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="46" bugs="0"/>
+      <ClassStats class="demo.StatisticalLineChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.SubCategoryAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="demo.SuperDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="854" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.SuperDemo$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$2" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$3" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$4" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$5" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$DisplayDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="23" bugs="0"/>
+      <ClassStats class="demo.SuperDemo$PDFExportTask" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.SurveyResultsDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="132" bugs="0"/>
+      <ClassStats class="demo.SurveyResultsDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="demo.SurveyResultsDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.SymbolAxisDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="35" bugs="0"/>
+      <ClassStats class="demo.ThermometerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.ThermometerDemo1$ContentPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.ThermometerDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="demo.ThumbnailDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="264" bugs="0"/>
+      <ClassStats class="demo.TimePeriodValuesDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="71" bugs="0"/>
+      <ClassStats class="demo.TimePeriodValuesDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.TimePeriodValuesDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="44" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="316" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo10" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo11" sourceFile="&lt;Unknown&gt;" interface="false" size="57" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo12" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo13" sourceFile="&lt;Unknown&gt;" interface="false" size="45" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo14" sourceFile="&lt;Unknown&gt;" interface="false" size="446" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo15" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="37" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="74" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="583" bugs="0"/>
+      <ClassStats class="demo.TimeSeriesDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="673" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.TimeSeriesDemo8" sourceFile="&lt;Unknown&gt;" interface="false" size="677" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.TimeSeriesDemo9" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="demo.TranslateDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.TranslateDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="52" bugs="0"/>
+      <ClassStats class="demo.TranslateDemo1$MyDemoPanel$TranslatingXYDataset" sourceFile="&lt;Unknown&gt;" interface="false" size="27" bugs="0"/>
+      <ClassStats class="demo.VectorPlotDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.VectorPlotDemo1$VectorToolTipGenerator" sourceFile="&lt;Unknown&gt;" interface="false" size="18" bugs="0"/>
+      <ClassStats class="demo.VectorRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.WaterfallChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.WindChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.XIntervalSeriesCollectionDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="28" bugs="0"/>
+      <ClassStats class="demo.XMLBarChartDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="14" bugs="0"/>
+      <ClassStats class="demo.XMLPieChartDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.XYAreaChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="69" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.XYAreaChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="demo.XYAreaRenderer2Demo1" sourceFile="&lt;Unknown&gt;" interface="false" size="61" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.XYBarChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="99" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.XYBarChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.XYBarChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.XYBarChartDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.XYBarChartDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="76" bugs="0"/>
+      <ClassStats class="demo.XYBarChartDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.XYBarChartDemo7" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.XYBlockChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="51" bugs="0"/>
+      <ClassStats class="demo.XYBlockChartDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="29" bugs="0"/>
+      <ClassStats class="demo.XYBlockChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="65" bugs="0"/>
+      <ClassStats class="demo.XYBlockChartDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="92" bugs="0"/>
+      <ClassStats class="demo.XYBoxAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="1307" bugs="0"/>
+      <ClassStats class="demo.XYDrawableAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="102" bugs="0"/>
+      <ClassStats class="demo.XYErrorRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="40" bugs="0"/>
+      <ClassStats class="demo.XYErrorRendererDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.XYLine3DRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="0"/>
+      <ClassStats class="demo.XYLineAndShapeRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.XYLineAndShapeRendererDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="66" bugs="0"/>
+      <ClassStats class="demo.XYPointerAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.XYPolygonAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="demo.XYSeriesDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.XYSeriesDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="30" bugs="0"/>
+      <ClassStats class="demo.XYSeriesDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.XYShapeRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="62" bugs="0"/>
+      <ClassStats class="demo.XYSplineRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="9" bugs="0"/>
+      <ClassStats class="demo.XYSplineRendererDemo1$MyDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="65" bugs="0"/>
+      <ClassStats class="demo.XYSplineRendererDemo1a" sourceFile="&lt;Unknown&gt;" interface="false" size="47" bugs="0"/>
+      <ClassStats class="demo.XYStepAreaRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.XYStepRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="36" bugs="0"/>
+      <ClassStats class="demo.XYStepRendererDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="41" bugs="0"/>
+      <ClassStats class="demo.XYTaskDatasetDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="63" bugs="0"/>
+      <ClassStats class="demo.XYTaskDatasetDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="101" bugs="0"/>
+      <ClassStats class="demo.XYTitleAnnotationDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="106" bugs="0"/>
+      <ClassStats class="demo.YIntervalChartDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.YIntervalChartDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="56" bugs="0"/>
+      <ClassStats class="demo.YieldCurveDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="58" bugs="0"/>
+      <ClassStats class="demo.YieldCurveDemo1$CustomDateAxis" sourceFile="&lt;Unknown&gt;" interface="false" size="34" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="demo.orsoncharts" total_bugs="3" total_types="24" total_size="975" priority_2="2" priority_1="1">
+      <ClassStats class="demo.orsoncharts.AreaChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="71" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.AreaChart3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="64" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.BarChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="70" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.BarChart3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="98" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.DemoDescription" sourceFile="&lt;Unknown&gt;" interface="false" size="13" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.HighlightCategoryColorSource" sourceFile="&lt;Unknown&gt;" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.orsoncharts.HighlightXYZColorSource" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.orsoncharts.LineChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="113" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.LineChart3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="60" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.PieChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.PieChart3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.RangeMarker1" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.ScatterPlot3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.ScatterPlot3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="32" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.ScatterPlot3D3" sourceFile="&lt;Unknown&gt;" interface="false" size="26" bugs="1" priority_1="1"/>
+      <ClassStats class="demo.orsoncharts.StackedBarChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.StackedBarChart3D2" sourceFile="&lt;Unknown&gt;" interface="false" size="106" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.StackedBarChart3D3" sourceFile="&lt;Unknown&gt;" interface="false" size="49" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.SurfaceRenderer1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.SurfaceRenderer1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.SurfaceRenderer2" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.SurfaceRenderer2$1" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.XYZBarChart3D1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="demo.orsoncharts.swing" total_bugs="3" total_types="45" total_size="1433" priority_2="1" priority_1="2">
+      <ClassStats class="demo.orsoncharts.swing.AreaChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AreaChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo1$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="53" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo2$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="55" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo3$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo4" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo4$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="25" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo5" sourceFile="&lt;Unknown&gt;" interface="false" size="38" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo5$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="72" bugs="1" priority_1="1"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo6" sourceFile="&lt;Unknown&gt;" interface="false" size="24" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo6$1" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.AxisRangeDemo6$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="76" bugs="1" priority_1="1"/>
+      <ClassStats class="demo.orsoncharts.swing.BarChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.BarChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.CategoryMarkerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="99" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.CategoryMarkerDemo1$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="74" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.DemoDisplayer" sourceFile="&lt;Unknown&gt;" interface="false" size="33" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.DemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ExitOnClose" sourceFile="&lt;Unknown&gt;" interface="false" size="4" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.LineChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.LineChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.OrsonChartsDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="99" bugs="1" priority_2="1"/>
+      <ClassStats class="demo.orsoncharts.swing.OrsonChartsDemo$1" sourceFile="&lt;Unknown&gt;" interface="false" size="11" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.OrsonChartsDemoComponent" sourceFile="&lt;Unknown&gt;" interface="false" size="122" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.PieChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="17" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.PieChart3DDemo1$1" sourceFile="&lt;Unknown&gt;" interface="false" size="8" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.PieChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="19" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.PieChart3DDemo2$1" sourceFile="&lt;Unknown&gt;" interface="false" size="7" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.RangeMarkerDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.RangeMarkerDemo1$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="42" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ScatterPlot3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ScatterPlot3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ScatterPlot3DDemo2$CustomDemoPanel" sourceFile="&lt;Unknown&gt;" interface="false" size="22" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ScatterPlot3DDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="54" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.StackedBarChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.StackedBarChart3DDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.StackedBarChart3DDemo3" sourceFile="&lt;Unknown&gt;" interface="false" size="16" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.SurfaceRendererDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.SurfaceRendererDemo2" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.ViewPoint3DDemo" sourceFile="&lt;Unknown&gt;" interface="false" size="48" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.XYZBarChart3DDemo1" sourceFile="&lt;Unknown&gt;" interface="false" size="15" bugs="0"/>
+      <ClassStats class="demo.orsoncharts.swing.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1245" invocations="3401" avgMicrosecondsPerInvocation="366" maxMicrosecondsPerInvocation="21909" standardDeviationMircosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="508" invocations="2064" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="8167" standardDeviationMircosecondsPerInvocation="509"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="503" invocations="3397" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="10744" standardDeviationMircosecondsPerInvocation="341"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="453" invocations="1420" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="4628" standardDeviationMircosecondsPerInvocation="497"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="353" invocations="2064" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="4321" standardDeviationMircosecondsPerInvocation="273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="345" invocations="2095" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="13598" standardDeviationMircosecondsPerInvocation="451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="326" invocations="2064" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="5671" standardDeviationMircosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="280" invocations="3776" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="2151" standardDeviationMircosecondsPerInvocation="124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="251" invocations="2070" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="2513" standardDeviationMircosecondsPerInvocation="157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="248" invocations="2" avgMicrosecondsPerInvocation="124239" maxMicrosecondsPerInvocation="159700" standardDeviationMircosecondsPerInvocation="35461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="245" invocations="2083" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="8629" standardDeviationMircosecondsPerInvocation="266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="184" invocations="1944" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="6910" standardDeviationMircosecondsPerInvocation="210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="119" invocations="456" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="4049" standardDeviationMircosecondsPerInvocation="297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="110" invocations="1420" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="1553" standardDeviationMircosecondsPerInvocation="129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="109" invocations="1589" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="871" standardDeviationMircosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="99" invocations="2064" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="6496" standardDeviationMircosecondsPerInvocation="163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="98" invocations="1420" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="15864" standardDeviationMircosecondsPerInvocation="429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="98" invocations="456" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="3135" standardDeviationMircosecondsPerInvocation="251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="85" invocations="1411" avgMicrosecondsPerInvocation="60" maxMicrosecondsPerInvocation="1068" standardDeviationMircosecondsPerInvocation="101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="81" invocations="456" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="3487" standardDeviationMircosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="74" invocations="455" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="2180" standardDeviationMircosecondsPerInvocation="208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="71" invocations="2064" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="1576" standardDeviationMircosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="70" invocations="1420" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="627" standardDeviationMircosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="70" invocations="456" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="3234" standardDeviationMircosecondsPerInvocation="240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="62" invocations="1420" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="978" standardDeviationMircosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="61" invocations="456" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="2636" standardDeviationMircosecondsPerInvocation="202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRoughConstants" totalMilliseconds="60" invocations="456" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="2137" standardDeviationMircosecondsPerInvocation="172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="58" invocations="456" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="2160" standardDeviationMircosecondsPerInvocation="172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="58" invocations="1414" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="1056" standardDeviationMircosecondsPerInvocation="77"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="57" invocations="456" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="2450" standardDeviationMircosecondsPerInvocation="203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="56" invocations="3331" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="596" standardDeviationMircosecondsPerInvocation="29"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="54" invocations="456" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="2272" standardDeviationMircosecondsPerInvocation="232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="54" invocations="456" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="2570" standardDeviationMircosecondsPerInvocation="208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="54" invocations="456" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="2211" standardDeviationMircosecondsPerInvocation="160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="53" invocations="1419" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="768" standardDeviationMircosecondsPerInvocation="73"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="51" invocations="456" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="10903" standardDeviationMircosecondsPerInvocation="529"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

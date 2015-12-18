@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1210124970000" analysisTimestamp="1424673274723" release="">
+  <Project projectName="risk">
+    <Jar>C:\works\Domination_1.0.9.7\Domination\Domination.jar</Jar>
+    <AuxClasspathEntry>C:\works\dependency\jnlp-loader-1.0.6.jar</AuxClasspathEntry>
+    <SrcDir>C:\works\Domination_1.0.9.7\Domination\src.zip</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.ChatServerThread">
+      <SourceLine classname="risk.engine.ChatServerThread" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Class>
+    <Method classname="risk.engine.ChatServerThread" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.ChatServerThread" start="45" end="102" startBytecode="0" endBytecode="350" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.ChatServerThread" start="50" end="50" startBytecode="31" endBytecode="31" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.ChatServerThread">
+      <SourceLine classname="risk.engine.ChatServerThread" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Class>
+    <Method classname="risk.engine.ChatServerThread" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.ChatServerThread" start="45" end="102" startBytecode="0" endBytecode="350" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="148" end="154" startBytecode="0" endBytecode="93" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.ChatServerThread" start="45" end="45" startBytecode="12" endBytecode="12" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE">
+    <Class classname="risk.engine.ChatServerThread">
+      <SourceLine classname="risk.engine.ChatServerThread" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Class>
+    <Method classname="risk.engine.ChatServerThread" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.ChatServerThread" start="45" end="102" startBytecode="0" endBytecode="350" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+    </Method>
+    <LocalVariable name="version" register="4" pc="46" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.engine.ChatServerThread" start="59" end="59" startBytecode="49" endBytecode="49" sourcefile="ChatServerThread.java" sourcepath="risk/engine/ChatServerThread.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="GameParser" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="658" end="2413" startBytecode="0" endBytecode="14747" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="1543" end="1543" startBytecode="4838" endBytecode="4838" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="264" end="626" startBytecode="0" endBytecode="2410" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="432" end="432" startBytecode="789" endBytecode="789" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="264" end="626" startBytecode="0" endBytecode="2410" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="148" end="154" startBytecode="0" endBytecode="93" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="427" end="427" startBytecode="767" endBytecode="767" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="264" end="626" startBytecode="0" endBytecode="2410" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="623" end="623" startBytecode="1475" endBytecode="1475" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="DoEndGo" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="2466" end="2495" startBytecode="0" endBytecode="173" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="GameParser" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="658" end="2413" startBytecode="0" endBytecode="14747" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="GetNext" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="216" end="216" startBytecode="0" endBytecode="49" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="getInput" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="2508" end="2567" startBytecode="0" endBytecode="469" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <Field classname="risk.engine.Risk" name="game" signature="Lrisk/engine/core/RiskGame;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.Risk" start="2512" end="2512" startBytecode="22" endBytecode="22" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="264" end="626" startBytecode="0" endBytecode="2410" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <Field classname="risk.engine.Risk" name="chatter" signature="Lrisk/engine/ChatArea;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.Risk" start="544" end="544" startBytecode="1264" endBytecode="1264" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="GameParser" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="658" end="2413" startBytecode="0" endBytecode="14747" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="678" end="678" startBytecode="73" endBytecode="73" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="264" end="626" startBytecode="0" endBytecode="2410" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="369" end="369" startBytecode="472" endBytecode="472" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.engine.Risk">
+      <SourceLine classname="risk.engine.Risk" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Class>
+    <Method classname="risk.engine.Risk" name="setHelp" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.Risk" start="2591" end="2658" startBytecode="0" endBytecode="910" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.Risk" start="2597" end="2602" startBytecode="32" endBytecode="88" sourcefile="Risk.java" sourcepath="risk/engine/Risk.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="saveFile" signature="(Ljava/lang/String;Ljava/lang/Object;)V" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="618" end="641" startBytecode="0" endBytecode="78" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <LocalVariable name="fc" register="6" pc="120" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="629" end="629" startBytecode="118" endBytecode="118" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fc"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="getAddLobby" signature="(Lrisk/engine/Risk;)Z" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="890" end="978" startBytecode="0" endBytecode="734" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.RiskUtil" start="899" end="899" startBytecode="31" endBytecode="31" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="941" end="941" startBytecode="185" endBytecode="185" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="sendText" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="653" end="718" startBytecode="0" endBytecode="689" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.RiskUtil" start="707" end="707" startBytecode="416" endBytecode="416" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="sendText" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="653" end="718" startBytecode="0" endBytecode="689" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.RiskUtil" start="702" end="702" startBytecode="386" endBytecode="386" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Field classname="risk.engine.RiskUtil" name="mapsdir" signature="Ljava/net/URL;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Field classname="risk.engine.RiskUtil" name="applet" signature="Ljava/applet/Applet;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Field classname="risk.engine.RiskUtil" name="streamOpener" signature="Lrisk/engine/RiskIO;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="getNewFile" signature="(Ljava/awt/Frame;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="373" end="491" startBytecode="0" endBytecode="794" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Method classname="java.util.StringTokenizer" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.StringTokenizer" start="221" end="222" startBytecode="0" endBytecode="35" sourcefile="StringTokenizer.java" sourcepath="java/util/StringTokenizer.java"/>
+    </Method>
+    <Int value="1" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="names" register="2" pc="220" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="458" end="458" startBytecode="270" endBytecode="270" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="438" end="438" startBytecode="201" endBytecode="201" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="444" end="444" startBytecode="223" endBytecode="223" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="55" end="1079" startBytecode="0" endBytecode="220" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="58" end="58" startBytecode="38" endBytecode="38" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="62" end="62" startBytecode="44" endBytecode="44" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="64" end="64" startBytecode="60" endBytecode="60" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="65" end="65" startBytecode="72" endBytecode="72" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="66" end="66" startBytecode="84" endBytecode="84" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="67" end="67" startBytecode="96" endBytecode="96" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="68" end="68" startBytecode="108" endBytecode="108" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="1079" end="1079" startBytecode="120" endBytecode="120" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="55" end="1079" startBytecode="0" endBytecode="48" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Type>
+    <SourceLine classname="risk.engine.RiskUtil" start="58" end="58" startBytecode="38" endBytecode="38" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="getAddLobby" signature="(Lrisk/engine/Risk;)Z" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="890" end="978" startBytecode="0" endBytecode="180" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="risk.engine.RiskUtil" start="899" end="899" startBytecode="19" endBytecode="19" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    <SourceLine classname="risk.engine.RiskUtil" start="941" end="941" startBytecode="173" endBytecode="173" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Method classname="risk.engine.RiskUtil" name="getAddLobby" signature="(Lrisk/engine/Risk;)Z" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" start="890" end="978" startBytecode="0" endBytecode="734" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.RiskUtil" start="964" end="964" startBytecode="312" endBytecode="312" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE">
+    <Class classname="risk.engine.RiskUtil">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Class>
+    <Field classname="risk.engine.RiskUtil" name="streamOpener" signature="Lrisk/engine/RiskIO;" isStatic="true">
+      <SourceLine classname="risk.engine.RiskUtil" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.RiskUtil" start="80" end="80" startBytecode="0" endBytecode="0" sourcefile="RiskUtil.java" sourcepath="risk/engine/RiskUtil.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.ai.AIHard">
+      <SourceLine classname="risk.engine.ai.AIHard" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIHard" name="GetContinentsToBreak" signature="(Lrisk/engine/core/Player;)Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="risk.engine.ai.AIHard" start="741" end="763" startBytecode="0" endBytecode="383" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.ai.AIHard">
+      <SourceLine classname="risk.engine.ai.AIHard" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIHard" name="NextToEnemyToEliminate" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="risk.engine.ai.AIHard" start="825" end="846" startBytecode="0" endBytecode="452" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.ai.AIHard">
+      <SourceLine classname="risk.engine.ai.AIHard" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIHard" name="OrderPlayers" signature="(Lrisk/engine/core/Player;)[Lrisk/engine/core/Player;" isStatic="false">
+      <SourceLine classname="risk.engine.ai.AIHard" start="773" end="793" startBytecode="0" endBytecode="351" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.ai.AIHard">
+      <SourceLine classname="risk.engine.ai.AIHard" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIHard" name="ShortPathToContinent" signature="(Lrisk/engine/core/Continent;Lrisk/engine/core/Country;Lrisk/engine/core/Country;I)Z" isStatic="false">
+      <SourceLine classname="risk.engine.ai.AIHard" start="803" end="820" startBytecode="0" endBytecode="278" sourcefile="AIHard.java" sourcepath="risk/engine/ai/AIHard.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.ai.AIPlayer">
+      <SourceLine classname="risk.engine.ai.AIPlayer" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Class>
+    <Field classname="risk.engine.ai.AIPlayer" name="aicrap" signature="Lrisk/engine/ai/AICrap;" isStatic="true">
+      <SourceLine classname="risk.engine.ai.AIPlayer" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="risk.engine.ai.AIPlayer">
+      <SourceLine classname="risk.engine.ai.AIPlayer" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIPlayer" name="getOutput" signature="(Lrisk/engine/core/RiskGame;Lrisk/engine/ai/AICrap;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="risk.engine.ai.AIPlayer" start="81" end="104" startBytecode="0" endBytecode="316" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Method>
+    <LocalVariable name="output" register="2" pc="131" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="102" end="102" startBytecode="176" endBytecode="176" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_NULL_CHECKED"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="84" end="84" startBytecode="13" endBytecode="13" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="96" end="96" startBytecode="134" endBytecode="134" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="risk.engine.ai.AIPlayer">
+      <SourceLine classname="risk.engine.ai.AIPlayer" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Class>
+    <Method classname="risk.engine.ai.AIPlayer" name="play" signature="(Lrisk/engine/Risk;)V" isStatic="true">
+      <SourceLine classname="risk.engine.ai.AIPlayer" start="31" end="76" startBytecode="0" endBytecode="296" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Method>
+    <Method classname="risk.engine.ai.AIPlayer" name="getOutput" signature="(Lrisk/engine/core/RiskGame;Lrisk/engine/ai/AICrap;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="risk.engine.ai.AIPlayer" start="81" end="104" startBytecode="0" endBytecode="316" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java"/>
+    </Method>
+    <Int value="2" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="usethisAI" register="3" pc="40" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="69" end="69" startBytecode="87" endBytecode="87" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="35" end="35" startBytecode="13" endBytecode="13" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="risk.engine.ai.AIPlayer" start="47" end="47" startBytecode="41" endBytecode="41" sourcefile="AIPlayer.java" sourcepath="risk/engine/ai/AIPlayer.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="risk.engine.core.Continent">
+      <SourceLine classname="risk.engine.core.Continent" sourcefile="Continent.java" sourcepath="risk/engine/core/Continent.java"/>
+    </Class>
+    <Method classname="risk.engine.core.Continent" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="risk.engine.core.Continent" start="145" end="145" startBytecode="0" endBytecode="116" sourcefile="Continent.java" sourcepath="risk/engine/core/Continent.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="setCardsfile" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1910" end="1991" startBytecode="0" endBytecode="103" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <LocalVariable name="st" register="2" pc="124" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1955" end="1955" startBytecode="123" endBytecode="123" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="st"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="loadCards" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1746" end="1881" startBytecode="0" endBytecode="1265" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1753" end="1753" startBytecode="36" endBytecode="36" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="loadMap" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1447" end="1601" startBytecode="0" endBytecode="1429" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1456" end="1456" startBytecode="36" endBytecode="36" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="setCardsfile" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1910" end="1991" startBytecode="0" endBytecode="425" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1917" end="1917" startBytecode="27" endBytecode="27" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="setMapfile" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1611" end="1703" startBytecode="0" endBytecode="620" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1617" end="1617" startBytecode="27" endBytecode="27" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="getContinents" signature="()[Lrisk/engine/core/Continent;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="2499" end="2499" startBytecode="0" endBytecode="46" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Field classname="risk.engine.core.RiskGame" name="Continents" signature="[Lrisk/engine/core/Continent;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.core.RiskGame" start="2499" end="2499" startBytecode="4" endBytecode="4" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="getCountries" signature="()[Lrisk/engine/core/Country;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="2491" end="2491" startBytecode="0" endBytecode="46" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Field classname="risk.engine.core.RiskGame" name="Countries" signature="[Lrisk/engine/core/Country;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Field>
+    <SourceLine classname="risk.engine.core.RiskGame" start="2491" end="2491" startBytecode="4" endBytecode="4" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="setContinents" signature="([Lrisk/engine/core/Continent;)V" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1735" end="1737" startBytecode="0" endBytecode="61" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Field classname="risk.engine.core.RiskGame" name="Continents" signature="[Lrisk/engine/core/Continent;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Field>
+    <LocalVariable name="a" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1735" end="1735" startBytecode="2" endBytecode="2" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="setCountries" signature="([Lrisk/engine/core/Country;)V" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1730" end="1732" startBytecode="0" endBytecode="61" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <Field classname="risk.engine.core.RiskGame" name="Countries" signature="[Lrisk/engine/core/Country;" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Field>
+    <LocalVariable name="a" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1730" end="1730" startBytecode="2" endBytecode="2" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="NoEmptyCountries" signature="()Z" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="2100" end="2115" startBytecode="0" endBytecode="145" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.engine.core.RiskGame">
+      <SourceLine classname="risk.engine.core.RiskGame" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Class>
+    <Method classname="risk.engine.core.RiskGame" name="loadCards" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.engine.core.RiskGame" start="1746" end="1881" startBytecode="0" endBytecode="1265" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.core.RiskGame" start="1831" end="1831" startBytecode="528" endBytecode="528" sourcefile="RiskGame.java" sourcepath="risk/engine/core/RiskGame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.guishared.BrowserLauncher">
+      <SourceLine classname="risk.engine.guishared.BrowserLauncher" sourcefile="BrowserLauncher.java" sourcepath="risk/engine/guishared/BrowserLauncher.java"/>
+    </Class>
+    <Method classname="risk.engine.guishared.BrowserLauncher" name="openURL" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="risk.engine.guishared.BrowserLauncher" start="474" end="574" startBytecode="0" endBytecode="1281" sourcefile="BrowserLauncher.java" sourcepath="risk/engine/guishared/BrowserLauncher.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="946" end="946" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.guishared.BrowserLauncher" start="508" end="508" startBytecode="334" endBytecode="334" sourcefile="BrowserLauncher.java" sourcepath="risk/engine/guishared/BrowserLauncher.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="risk.engine.guishared.PicturePanel">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Class>
+    <Field classname="risk.engine.guishared.PicturePanel" name="tempimg" signature="Ljava/awt/image/BufferedImage;" isStatic="false">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Field>
+    <Int value="80" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="90" end="90" startBytecode="77" endBytecode="77" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="508" end="508" startBytecode="9" endBytecode="9" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="709" end="709" startBytecode="1009" endBytecode="1009" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="711" end="711" startBytecode="1018" endBytecode="1018" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="703" end="703" startBytecode="969" endBytecode="969" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="risk.engine.guishared.PicturePanel">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Class>
+    <Method classname="risk.engine.guishared.PicturePanel" name="repaintCountries" signature="(I)V" isStatic="false">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" start="506" end="712" startBytecode="0" endBytecode="1761" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Method>
+    <Method classname="risk.engine.guishared.PicturePanel$countryImage" name="checkChange" signature="(Ljava/awt/Color;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="risk.engine.guishared.PicturePanel$countryImage" start="812" end="818" startBytecode="0" endBytecode="83" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Method>
+    <Int value="1" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="val" register="5" pc="593" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="659" end="659" startBytecode="710" endBytecode="710" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="525" end="525" startBytecode="104" endBytecode="104" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="615" end="615" startBytecode="594" endBytecode="594" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="risk.engine.guishared.PicturePanel">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Class>
+    <Method classname="risk.engine.guishared.PicturePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="risk.engine.guishared.PicturePanel" start="214" end="270" startBytecode="0" endBytecode="614" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.guishared.PicturePanel" start="268" end="268" startBytecode="397" endBytecode="397" sourcefile="PicturePanel.java" sourcepath="risk/engine/guishared/PicturePanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.guishared.SimplePrintStream">
+      <SourceLine classname="risk.engine.guishared.SimplePrintStream" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+    </Class>
+    <Method classname="risk.engine.guishared.SimplePrintStream" name="flush" signature="()V" isStatic="false">
+      <SourceLine classname="risk.engine.guishared.SimplePrintStream" start="22" end="28" startBytecode="0" endBytecode="79" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.guishared.SimplePrintStream" start="24" end="24" startBytecode="12" endBytecode="12" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.engine.guishared.SimplePrintStream">
+      <SourceLine classname="risk.engine.guishared.SimplePrintStream" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+    </Class>
+    <Method classname="risk.engine.guishared.SimplePrintStream" name="getSimplePrintStream" signature="(Ljava/io/StringWriter;)Ljava/io/PrintStream;" isStatic="true">
+      <SourceLine classname="risk.engine.guishared.SimplePrintStream" start="32" end="32" startBytecode="0" endBytecode="58" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="151" end="152" startBytecode="0" endBytecode="42" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="risk.engine.guishared.SimplePrintStream" start="32" end="32" startBytecode="13" endBytecode="13" sourcefile="SimplePrintStream.java" sourcepath="risk/engine/guishared/SimplePrintStream.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.tools.mapeditor.MapEditor">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditor" name="saveMap" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" start="837" end="1085" startBytecode="0" endBytecode="2808" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditor" start="1053" end="1053" startBytecode="1681" endBytecode="1681" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    <SourceLine classname="risk.tools.mapeditor.MapEditor" start="1064" end="1064" startBytecode="1737" endBytecode="1737" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="NS_DANGEROUS_NON_SHORT_CIRCUIT" priority="1" rank="15" abbrev="NS" category="STYLE">
+    <Class classname="risk.tools.mapeditor.MapEditor">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditor" name="saveMap" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" start="837" end="1085" startBytecode="0" endBytecode="2808" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditor" start="1073" end="1073" startBytecode="1830" endBytecode="1830" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditor">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditor" name="checkMap" signature="()Z" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditor" start="704" end="830" startBytecode="0" endBytecode="1071" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditor" start="740" end="740" startBytecode="162" endBytecode="162" sourcefile="MapEditor.java" sourcepath="risk/tools/mapeditor/MapEditor.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorPanel">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorPanel" sourcefile="MapEditorPanel.java" sourcepath="risk/tools/mapeditor/MapEditorPanel.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditorPanel" name="contains" signature="(II)Z" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorPanel" start="416" end="450" startBytecode="0" endBytecode="401" sourcefile="MapEditorPanel.java" sourcepath="risk/tools/mapeditor/MapEditorPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditorPanel" start="431" end="431" startBytecode="140" endBytecode="140" sourcefile="MapEditorPanel.java" sourcepath="risk/tools/mapeditor/MapEditorPanel.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorViews$CardsListModel">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CardsListModel" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditorViews$CardsListModel" name="remove" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CardsListModel" start="683" end="723" startBytecode="0" endBytecode="386" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CardsListModel" start="691" end="691" startBytecode="27" endBytecode="27" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorViews$ContinentsListModel">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$ContinentsListModel" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditorViews$ContinentsListModel" name="remove" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$ContinentsListModel" start="501" end="565" startBytecode="0" endBytecode="607" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditorViews$ContinentsListModel" start="509" end="509" startBytecode="27" endBytecode="27" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorViews$CountriesListModel">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CountriesListModel" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditorViews$CountriesListModel" name="remove" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CountriesListModel" start="334" end="360" startBytecode="0" endBytecode="219" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditorViews$CountriesListModel" start="342" end="342" startBytecode="27" endBytecode="27" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorViews$MissionsListModel">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$MissionsListModel" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Class>
+    <Method classname="risk.tools.mapeditor.MapEditorViews$MissionsListModel" name="remove" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$MissionsListModel" start="889" end="921" startBytecode="0" endBytecode="278" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.mapeditor.MapEditorViews$MissionsListModel" start="897" end="897" startBytecode="27" endBytecode="27" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="risk.tools.mapeditor.MapEditorViews$OptionPaneTextArea">
+      <SourceLine classname="risk.tools.mapeditor.MapEditorViews$OptionPaneTextArea" start="960" end="985" sourcefile="MapEditorViews.java" sourcepath="risk/tools/mapeditor/MapEditorViews.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="risk.tools.translation.MessageTool">
+      <SourceLine classname="risk.tools.translation.MessageTool" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MessageTool" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MessageTool" start="456" end="632" startBytecode="0" endBytecode="250" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="name" register="2" pc="276" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.tools.translation.MessageTool" start="550" end="550" startBytecode="278" endBytecode="278" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="risk.tools.translation.MessageTool">
+      <SourceLine classname="risk.tools.translation.MessageTool" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MessageTool" name="getNode" signature="(Ljava/lang/String;)Lrisk/tools/translation/MyNode;" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MessageTool" start="866" end="882" startBytecode="0" endBytecode="42" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <SourceLine classname="risk.tools.translation.MessageTool" start="872" end="872" startBytecode="40" endBytecode="40" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS">
+    <Class classname="risk.tools.translation.MessageTool">
+      <SourceLine classname="risk.tools.translation.MessageTool" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MessageTool" name="load" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MessageTool" start="890" end="950" startBytecode="0" endBytecode="427" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Method>
+    <LocalVariable name="locales" register="2" pc="37" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="risk.tools.translation.Mtcomm" name="getLocales" signature="()[Ljava/util/Locale;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="risk.tools.translation.Mtcomm" sourcefile="Mtcomm.java" sourcepath="risk/tools/translation/Mtcomm.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.translation.MessageTool" start="901" end="901" startBytecode="35" endBytecode="35" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    <SourceLine classname="risk.tools.translation.MessageTool" start="903" end="903" startBytecode="38" endBytecode="38" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="risk.tools.translation.MessageTool$MyRenderer">
+      <SourceLine classname="risk.tools.translation.MessageTool$MyRenderer" start="967" end="1037" sourcefile="MessageTool.java" sourcepath="risk/tools/translation/MessageTool.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS" priority="2" rank="16" abbrev="BC" category="BAD_PRACTICE">
+    <Class classname="risk.tools.translation.MyNode">
+      <SourceLine classname="risk.tools.translation.MyNode" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MyNode" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MyNode" start="287" end="319" startBytecode="0" endBytecode="242" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.translation.MyNode" start="287" end="287" startBytecode="1" endBytecode="1" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="risk.tools.translation.MyNode">
+      <SourceLine classname="risk.tools.translation.MyNode" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MyNode" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MyNode" start="287" end="319" startBytecode="0" endBytecode="242" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="risk.tools.translation.MyNode">
+      <SourceLine classname="risk.tools.translation.MyNode" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MyNode" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MyNode" start="287" end="319" startBytecode="0" endBytecode="242" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="2" rank="8" abbrev="RpC" category="CORRECTNESS">
+    <Class classname="risk.tools.translation.MyNode">
+      <SourceLine classname="risk.tools.translation.MyNode" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.MyNode" name="nodeWorkRefresh" signature="(Lrisk/tools/translation/Mtcomm;Ljava/util/Locale;)V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.MyNode" start="232" end="252" startBytecode="0" endBytecode="207" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    </Method>
+    <SourceLine classname="risk.tools.translation.MyNode" start="236" end="236" startBytecode="17" endBytecode="20" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+    <SourceLine classname="risk.tools.translation.MyNode" start="236" end="236" startBytecode="24" endBytecode="27" sourcefile="MyNode.java" sourcepath="risk/tools/translation/MyNode.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="risk.tools.translation.RiskComm">
+      <SourceLine classname="risk.tools.translation.RiskComm" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.RiskComm" name="getLocaleProperties" signature="(Ljava/util/Locale;)Ljava/util/Properties;" isStatic="false">
+      <SourceLine classname="risk.tools.translation.RiskComm" start="188" end="205" startBytecode="0" endBytecode="234" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="196" end="196" startBytecode="74" endBytecode="74" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="199" end="199" startBytecode="80" endBytecode="80" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="201" end="201" startBytecode="109" endBytecode="109" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="205" end="205" startBytecode="119" endBytecode="119" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="risk.tools.translation.RiskComm">
+      <SourceLine classname="risk.tools.translation.RiskComm" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.RiskComm" name="load" signature="()Z" isStatic="false">
+      <SourceLine classname="risk.tools.translation.RiskComm" start="29" end="119" startBytecode="0" endBytecode="341" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="105" end="105" startBytecode="110" endBytecode="110" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="107" end="107" startBytecode="116" endBytecode="116" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="109" end="109" startBytecode="127" endBytecode="127" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="111" end="111" startBytecode="136" endBytecode="136" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="113" end="113" startBytecode="163" endBytecode="163" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="115" end="115" startBytecode="184" endBytecode="184" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="risk.tools.translation.RiskComm">
+      <SourceLine classname="risk.tools.translation.RiskComm" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.RiskComm" name="saveMessage" signature="(Lrisk/tools/translation/MyNode;Ljava/util/Locale;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.RiskComm" start="217" end="235" startBytecode="0" endBytecode="225" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java"/>
+    </Method>
+    <Class classname="java.io.OutputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.OutputStream" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="230" end="230" startBytecode="94" endBytecode="94" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="233" end="233" startBytecode="99" endBytecode="99" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="risk.tools.translation.RiskComm" start="235" end="235" startBytecode="109" endBytecode="109" sourcefile="RiskComm.java" sourcepath="risk/tools/translation/RiskComm.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{OutputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.tools.translation.YuraTextEditor">
+      <SourceLine classname="risk.tools.translation.YuraTextEditor" sourcefile="YuraTextEditor.java" sourcepath="risk/tools/translation/YuraTextEditor.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.YuraTextEditor" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.YuraTextEditor" start="57" end="213" startBytecode="0" endBytecode="324" sourcefile="YuraTextEditor.java" sourcepath="risk/tools/translation/YuraTextEditor.java"/>
+    </Method>
+    <LocalVariable name="b" register="6" pc="479" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.tools.translation.YuraTextEditor" start="139" end="139" startBytecode="477" endBytecode="477" sourcefile="YuraTextEditor.java" sourcepath="risk/tools/translation/YuraTextEditor.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="b"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="2" rank="18" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="risk.tools.translation.YuraTextEditor">
+      <SourceLine classname="risk.tools.translation.YuraTextEditor" sourcefile="YuraTextEditor.java" sourcepath="risk/tools/translation/YuraTextEditor.java"/>
+    </Class>
+    <Method classname="risk.tools.translation.YuraTextEditor" name="format" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.tools.translation.YuraTextEditor" start="522" end="524" startBytecode="0" endBytecode="62" sourcefile="YuraTextEditor.java" sourcepath="risk/tools/translation/YuraTextEditor.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="&lt;init&gt;" signature="(Lrisk/engine/Risk;)V" isStatic="false">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="23" end="83" startBytecode="0" endBytecode="149" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="76" end="76" startBytecode="31" endBytecode="31" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="Help" signature="()V" isStatic="true">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="87" end="108" startBytecode="0" endBytecode="268" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="90" end="90" startBytecode="9" endBytecode="9" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="117" end="171" startBytecode="0" endBytecode="565" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="149" end="149" startBytecode="206" endBytecode="206" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="168" end="168" startBytecode="262" endBytecode="262" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="Help" signature="()V" isStatic="true">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="87" end="108" startBytecode="0" endBytecode="268" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="117" end="171" startBytecode="0" endBytecode="565" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <LocalVariable name="input" register="1" pc="20" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="122" end="122" startBytecode="22" endBytecode="22" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_IN_CATCH_BLOCKS" value="true"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="117" end="171" startBytecode="0" endBytecode="565" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="166" end="166" startBytecode="252" endBytecode="252" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+  </BugInstance>
+  <BugInstance type="UW_UNCOND_WAIT" priority="2" rank="14" abbrev="UW" category="MT_CORRECTNESS">
+    <Class classname="risk.ui.CommandLine.CommandText">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Class>
+    <Method classname="risk.ui.CommandLine.CommandText" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.CommandLine.CommandText" start="117" end="171" startBytecode="0" endBytecode="565" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.CommandLine.CommandText" start="158" end="158" startBytecode="230" endBytecode="230" sourcefile="CommandText.java" sourcepath="risk/ui/CommandLine/CommandText.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="risk.ui.FlashGUI.BattleDialog">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.BattleDialog" name="showDiceResults" signature="([I[I)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" start="283" end="295" startBytecode="0" endBytecode="134" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Method>
+    <Field classname="risk.ui.FlashGUI.BattleDialog" name="att" signature="[I" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Field>
+    <LocalVariable name="atti" register="1" pc="29" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.FlashGUI.BattleDialog" start="290" end="290" startBytecode="29" endBytecode="29" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="risk.ui.FlashGUI.BattleDialog">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.BattleDialog" name="showDiceResults" signature="([I[I)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" start="283" end="295" startBytecode="0" endBytecode="134" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Method>
+    <Field classname="risk.ui.FlashGUI.BattleDialog" name="def" signature="[I" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.BattleDialog" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+    </Field>
+    <LocalVariable name="defi" register="2" pc="34" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.FlashGUI.BattleDialog" start="291" end="291" startBytecode="34" endBytecode="34" sourcefile="BattleDialog.java" sourcepath="risk/ui/FlashGUI/BattleDialog.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.CardsDialog$CardPanel">
+      <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.CardsDialog$CardPanel" name="&lt;init&gt;" signature="(Lrisk/ui/FlashGUI/CardsDialog;Lrisk/engine/core/Card;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" start="348" end="443" startBytecode="0" endBytecode="274" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+    </Method>
+    <LocalVariable name="tl" register="13" pc="223" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" start="392" end="392" startBytecode="221" endBytecode="221" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tl"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.CardsDialog$CardPanel">
+      <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.CardsDialog$CardPanel" name="&lt;init&gt;" signature="(Lrisk/ui/FlashGUI/CardsDialog;Lrisk/engine/core/Card;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" start="348" end="443" startBytecode="0" endBytecode="959" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.CardsDialog$CardPanel" start="400" end="400" startBytecode="265" endBytecode="265" sourcefile="CardsDialog.java" sourcepath="risk/ui/FlashGUI/CardsDialog.java"/>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="risk.ui.FlashGUI.FlashRiskAdapter">
+      <SourceLine classname="risk.ui.FlashGUI.FlashRiskAdapter" sourcefile="FlashRiskAdapter.java" sourcepath="risk/ui/FlashGUI/FlashRiskAdapter.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.FlashRiskAdapter" name="closeGame" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.FlashRiskAdapter" start="481" end="515" startBytecode="0" endBytecode="217" sourcefile="FlashRiskAdapter.java" sourcepath="risk/ui/FlashGUI/FlashRiskAdapter.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.FlashRiskAdapter" start="501" end="501" startBytecode="99" endBytecode="99" sourcefile="FlashRiskAdapter.java" sourcepath="risk/ui/FlashGUI/FlashRiskAdapter.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="risk.ui.FlashGUI.GameFrame">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Class>
+    <Field classname="risk.ui.FlashGUI.GameFrame" name="buttonActionListener" signature="Ljava/awt/event/ActionListener;" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Field>
+    <Type descriptor="Lrisk/ui/FlashGUI/GameFrame$6;" role="TYPE_FOUND">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame$6" start="480" end="558" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Type>
+    <SourceLine classname="risk.ui.FlashGUI.GameFrame" start="480" end="480" startBytecode="13" endBytecode="13" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.GameFrame">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.GameFrame" name="keyReleased" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame" start="1323" end="1362" startBytecode="0" endBytecode="321" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.GameFrame" start="1323" end="1330" startBytecode="4" endBytecode="88" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="risk.ui.FlashGUI.MainMenu">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MainMenu" name="&lt;init&gt;" signature="(Lrisk/engine/Risk;Ljava/awt/Frame;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="69" end="111" startBytecode="0" endBytecode="460" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="78" end="78" startBytecode="72" endBytecode="72" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="78" end="78" startBytecode="72" endBytecode="72" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MainMenu">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MainMenu" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="147" end="244" startBytecode="0" endBytecode="430" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Method>
+    <LocalVariable name="font" register="4" pc="942" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="239" end="239" startBytecode="940" endBytecode="940" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="font"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MainMenu">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MainMenu" name="activateButton" signature="(I)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="308" end="422" startBytecode="0" endBytecode="784" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="310" end="408" startBytecode="5" endBytecode="444" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MainMenu">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MainMenu" name="keyReleased" signature="(Ljava/awt/event/KeyEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="533" end="600" startBytecode="0" endBytecode="415" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.MainMenu" start="533" end="596" startBytecode="4" endBytecode="254" sourcefile="MainMenu.java" sourcepath="risk/ui/FlashGUI/MainMenu.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MissionDialog$missionPanel">
+      <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MissionDialog$missionPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" start="122" end="154" startBytecode="0" endBytecode="105" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+    </Method>
+    <LocalVariable name="tl" register="9" pc="120" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" start="141" end="141" startBytecode="118" endBytecode="118" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tl"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MissionDialog$missionPanel">
+      <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MissionDialog$missionPanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" start="122" end="154" startBytecode="0" endBytecode="428" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.FlashGUI.MissionDialog$missionPanel" start="149" end="149" startBytecode="166" endBytecode="166" sourcefile="MissionDialog.java" sourcepath="risk/ui/FlashGUI/MissionDialog.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="2" rank="17" abbrev="BC" category="STYLE">
+    <Class classname="risk.ui.FlashGUI.MoveDialog">
+      <SourceLine classname="risk.ui.FlashGUI.MoveDialog" sourcefile="MoveDialog.java" sourcepath="risk/ui/FlashGUI/MoveDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.FlashGUI.MoveDialog" name="&lt;init&gt;" signature="(Ljava/awt/Frame;Z)V" isStatic="false">
+      <SourceLine classname="risk.ui.FlashGUI.MoveDialog" start="66" end="83" startBytecode="0" endBytecode="33" sourcefile="MoveDialog.java" sourcepath="risk/ui/FlashGUI/MoveDialog.java"/>
+    </Method>
+    <Type descriptor="Ljava/awt/Frame;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.Frame" start="135" end="1275" sourcefile="Frame.java" sourcepath="java/awt/Frame.java"/>
+    </Type>
+    <Type descriptor="Lrisk/ui/FlashGUI/GameFrame;" role="TYPE_EXPECTED">
+      <SourceLine classname="risk.ui.FlashGUI.GameFrame" start="49" end="1365" sourcefile="GameFrame.java" sourcepath="risk/ui/FlashGUI/GameFrame.java"/>
+    </Type>
+    <LocalVariable name="parent" register="1" pc="7" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="risk.ui.FlashGUI.MoveDialog" start="68" end="68" startBytecode="8" endBytecode="8" sourcefile="MoveDialog.java" sourcepath="risk/ui/FlashGUI/MoveDialog.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="risk.ui.FlashGUI.NewGameFrame$MyColor">
+      <SourceLine classname="risk.ui.FlashGUI.NewGameFrame$MyColor" start="1022" end="1086" sourcefile="NewGameFrame.java" sourcepath="risk/ui/FlashGUI/NewGameFrame.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" start="602" end="624" startBytecode="0" endBytecode="315" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" start="605" end="605" startBytecode="9" endBytecode="9" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame" name="go" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" start="555" end="593" startBytecode="0" endBytecode="318" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" start="559" end="559" startBytecode="41" endBytecode="41" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame" start="602" end="624" startBytecode="0" endBytecode="315" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame$11">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$11" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame$11" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$11" start="514" end="515" startBytecode="0" endBytecode="60" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$11" start="514" end="514" startBytecode="1" endBytecode="1" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Field classname="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter" name="adaptee" signature="Lrisk/ui/Increment1GUI/Increment1Frame;" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Field>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter" start="282" end="282" startBytecode="11" endBytecode="11" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame$8">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$8" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame$8" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$8" start="413" end="450" startBytecode="0" endBytecode="369" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$8" start="426" end="426" startBytecode="78" endBytecode="78" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.Increment1GUI.Increment1Frame$9">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$9" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.Increment1Frame$9" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$9" start="460" end="494" startBytecode="0" endBytecode="356" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.Increment1GUI.Increment1Frame$9" start="473" end="473" startBytecode="78" endBytecode="78" sourcefile="Increment1Frame.java" sourcepath="risk/ui/Increment1GUI/Increment1Frame.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.Increment1GUI.PrintDialog$Printer">
+      <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.PrintDialog$Printer" name="print" signature="(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" start="57" end="64" startBytecode="0" endBytecode="22" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    </Method>
+    <LocalVariable name="paperHeight" register="5" pc="37" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" start="62" end="62" startBytecode="35" endBytecode="35" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="paperHeight"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.Increment1GUI.PrintDialog$Printer">
+      <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.Increment1GUI.PrintDialog$Printer" name="print" signature="(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I" isStatic="false">
+      <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" start="57" end="64" startBytecode="0" endBytecode="22" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    </Method>
+    <LocalVariable name="paperWidth" register="4" pc="30" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.Increment1GUI.PrintDialog$Printer" start="61" end="61" startBytecode="28" endBytecode="28" sourcefile="PrintDialog.java" sourcepath="risk/ui/Increment1GUI/PrintDialog.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="paperWidth"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="592" end="614" startBytecode="0" endBytecode="276" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="595" end="595" startBytecode="9" endBytecode="9" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI" name="go" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="557" end="585" startBytecode="0" endBytecode="257" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="558" end="558" startBytecode="10" endBytecode="10" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="592" end="614" startBytecode="0" endBytecode="276" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI" name="pprepaintCountries" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="747" end="761" startBytecode="0" endBytecode="185" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI" start="750" end="756" startBytecode="11" endBytecode="74" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$1">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$1" name="sendMessage" signature="(Ljava/lang/String;ZZ)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1" start="71" end="101" startBytecode="0" endBytecode="310" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1" start="92" end="92" startBytecode="128" endBytecode="128" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1" start="92" end="92" startBytecode="128" endBytecode="128" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$10">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$10" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$10" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$10" start="518" end="519" startBytecode="0" endBytecode="60" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$10" start="518" end="518" startBytecode="1" endBytecode="1" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Field classname="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter" name="adaptee" signature="Lrisk/ui/SimpleGUI/RiskGUI;" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Field>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter" start="318" end="318" startBytecode="11" endBytecode="11" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$8">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$8" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" start="432" end="463" startBytecode="0" endBytecode="309" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" start="443" end="443" startBytecode="52" endBytecode="52" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$8">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$8" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" start="432" end="463" startBytecode="0" endBytecode="309" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$8" start="456" end="456" startBytecode="107" endBytecode="107" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$9">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$9" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" start="474" end="508" startBytecode="0" endBytecode="375" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" start="501" end="501" startBytecode="159" endBytecode="159" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" start="501" end="501" startBytecode="159" endBytecode="159" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SimpleGUI.RiskGUI$9">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Class>
+    <Method classname="risk.ui.SimpleGUI.RiskGUI$9" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" start="474" end="508" startBytecode="0" endBytecode="375" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SimpleGUI.RiskGUI$9" start="491" end="491" startBytecode="94" endBytecode="94" sourcefile="RiskGUI.java" sourcepath="risk/ui/SimpleGUI/RiskGUI.java"/>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SwingGUI.CardsDialog">
+      <SourceLine classname="risk.ui.SwingGUI.CardsDialog" sourcefile="CardsDialog.java" sourcepath="risk/ui/SwingGUI/CardsDialog.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.CardsDialog" name="&lt;init&gt;" signature="(Ljava/awt/Frame;Lrisk/engine/guishared/PicturePanel;ZLrisk/engine/Risk;Z)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.CardsDialog" start="51" end="82" startBytecode="0" endBytecode="382" sourcefile="CardsDialog.java" sourcepath="risk/ui/SwingGUI/CardsDialog.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="risk.ui.SwingGUI.CardsDialog" start="70" end="70" startBytecode="130" endBytecode="130" sourcefile="CardsDialog.java" sourcepath="risk/ui/SwingGUI/CardsDialog.java"/>
+    <SourceLine classname="risk.ui.SwingGUI.CardsDialog" start="70" end="70" startBytecode="130" endBytecode="130" sourcefile="CardsDialog.java" sourcepath="risk/ui/SwingGUI/CardsDialog.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE">
+    <Class classname="risk.ui.SwingGUI.FX3DPanel">
+      <SourceLine classname="risk.ui.SwingGUI.FX3DPanel" sourcefile="FX3DPanel.java" sourcepath="risk/ui/SwingGUI/FX3DPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.FX3DPanel" name="mouseDragged" signature="(Ljava/awt/event/MouseEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.FX3DPanel" start="200" end="208" startBytecode="0" endBytecode="121" sourcefile="FX3DPanel.java" sourcepath="risk/ui/SwingGUI/FX3DPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.FX3DPanel" start="201" end="201" startBytecode="20" endBytecode="20" sourcefile="FX3DPanel.java" sourcepath="risk/ui/SwingGUI/FX3DPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="1848" end="1869" startBytecode="0" endBytecode="268" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="1852" end="1852" startBytecode="16" endBytecode="16" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel" name="saveLog" signature="(Ljavax/swing/JTextArea;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="1774" end="1810" startBytecode="0" endBytecode="367" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="1791" end="1791" startBytecode="94" endBytecode="94" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="277" end="307" startBytecode="0" endBytecode="269" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="294" end="294" startBytecode="89" endBytecode="89" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel" name="Commands" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel" start="1848" end="1869" startBytecode="0" endBytecode="268" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="634" end="703" startBytecode="0" endBytecode="544" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="659" end="659" startBytecode="121" endBytecode="121" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" name="cgo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="555" end="585" startBytecode="0" endBytecode="270" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="557" end="557" startBytecode="10" endBytecode="10" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="634" end="703" startBytecode="0" endBytecode="544" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" start="673" end="673" startBytecode="176" endBytecode="176" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$GamePanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$GamePanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$GamePanel" name="mouseMoved" signature="(Ljava/awt/event/MouseEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$GamePanel" start="2674" end="2738" startBytecode="0" endBytecode="224" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <LocalVariable name="name" register="3" pc="41" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$GamePanel" start="2679" end="2679" startBytecode="40" endBytecode="40" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="name"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4" start="2930" end="2983" startBytecode="0" endBytecode="567" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4" start="2972" end="2976" startBytecode="255" endBytecode="308" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$NamedColor">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$NamedColor" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$NamedColor" start="1" end="1" startBytecode="0" endBytecode="0" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    <Method classname="java.awt.Color" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="java.awt.Color" start="699" end="699" startBytecode="0" endBytecode="61" sourcefile="Color.java" sourcepath="java/awt/Color.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" name="closeGame" signature="()V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" start="2169" end="2175" startBytecode="0" endBytecode="77" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" start="2173" end="2173" startBytecode="20" endBytecode="20" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" name="showDiceResults" signature="([I[I)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" start="2249" end="2265" startBytecode="0" endBytecode="339" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" start="2253" end="2253" startBytecode="58" endBytecode="58" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Field classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" name="memoryload" signature="Z" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$defendPanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$defendPanel" start="3792" end="3800" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_TOSTRING" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$movePanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$movePanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$movePanel" name="&lt;init&gt;" signature="(Lrisk/ui/SwingGUI/SwingGUIPanel;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$movePanel" start="3805" end="3884" startBytecode="0" endBytecode="624" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="935" end="935" startBytecode="0" endBytecode="31" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="toString" signature="(I)Ljava/lang/String;" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$movePanel" start="3827" end="3827" startBytecode="135" endBytecode="135" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_TOSTRING" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel" name="&lt;init&gt;" signature="(Lrisk/ui/SwingGUI/SwingGUIPanel;)V" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel" start="3642" end="3758" startBytecode="0" endBytecode="871" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="935" end="935" startBytecode="0" endBytecode="31" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="toString" signature="(I)Ljava/lang/String;" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel" start="3682" end="3682" startBytecode="319" endBytecode="319" sourcefile="SwingGUIPanel.java" sourcepath="risk/ui/SwingGUI/SwingGUIPanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="risk.ui.SwingGUI.TestPanel$4">
+      <SourceLine classname="risk.ui.SwingGUI.TestPanel$4" sourcefile="TestPanel.java" sourcepath="risk/ui/SwingGUI/TestPanel.java"/>
+    </Class>
+    <Method classname="risk.ui.SwingGUI.TestPanel$4" name="getValueAt" signature="(II)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="risk.ui.SwingGUI.TestPanel$4" start="263" end="287" startBytecode="0" endBytecode="400" sourcefile="TestPanel.java" sourcepath="risk/ui/SwingGUI/TestPanel.java"/>
+    </Method>
+    <SourceLine classname="risk.ui.SwingGUI.TestPanel$4" start="285" end="285" startBytecode="229" endBytecode="229" sourcefile="TestPanel.java" sourcepath="risk/ui/SwingGUI/TestPanel.java"/>
+    <SourceLine classname="risk.ui.SwingGUI.TestPanel$4" start="286" end="286" startBytecode="241" endBytecode="241" sourcefile="TestPanel.java" sourcepath="risk/ui/SwingGUI/TestPanel.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 6 May 2008 21:49:30 -0400" total_classes="225" referenced_classes="938" total_bugs="136" total_size="15674" num_packages="12" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="57.34" clock_seconds="26.03" peak_mbytes="521.83" alloc_mbytes="683.00" gc_seconds="0.63" priority_2="100" priority_1="36">
+    <PackageStats package="risk.engine" total_bugs="28" total_types="12" total_size="1935" priority_2="18" priority_1="10">
+      <ClassStats class="risk.engine.ChatArea" sourceFile="ChatArea.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="risk.engine.ChatDisplayThread" sourceFile="ChatDisplayThread.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="risk.engine.ChatReader" sourceFile="ChatReader.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="risk.engine.ChatServerThread" sourceFile="ChatServerThread.java" interface="false" size="34" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="risk.engine.Risk" sourceFile="Risk.java" interface="false" size="1158" bugs="12" priority_2="8" priority_1="4"/>
+      <ClassStats class="risk.engine.Risk$1Replay" sourceFile="Risk.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="risk.engine.RiskAdapter" sourceFile="RiskAdapter.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="risk.engine.RiskController" sourceFile="RiskController.java" interface="false" size="171" bugs="0"/>
+      <ClassStats class="risk.engine.RiskIO" sourceFile="RiskIO.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="risk.engine.RiskListener" sourceFile="RiskListener.java" interface="true" size="23" bugs="0"/>
+      <ClassStats class="risk.engine.RiskUtil" sourceFile="RiskUtil.java" interface="false" size="372" bugs="13" priority_2="9" priority_1="4"/>
+      <ClassStats class="risk.engine.RiskUtil$1" sourceFile="RiskUtil.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.engine.ai" total_bugs="7" total_types="6" total_size="1017" priority_2="6" priority_1="1">
+      <ClassStats class="risk.engine.ai.AICrap" sourceFile="AICrap.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="risk.engine.ai.AIEasy" sourceFile="AIEasy.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="risk.engine.ai.AIHard" sourceFile="AIHard.java" interface="false" size="382" bugs="4" priority_2="4"/>
+      <ClassStats class="risk.engine.ai.AIHardCapital" sourceFile="AIHardCapital.java" interface="false" size="322" bugs="0"/>
+      <ClassStats class="risk.engine.ai.AIHardMission" sourceFile="AIHardMission.java" interface="false" size="152" bugs="0"/>
+      <ClassStats class="risk.engine.ai.AIPlayer" sourceFile="AIPlayer.java" interface="false" size="60" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="risk.engine.core" total_bugs="12" total_types="7" total_size="1302" priority_2="7" priority_1="5">
+      <ClassStats class="risk.engine.core.Card" sourceFile="Card.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="risk.engine.core.Continent" sourceFile="Continent.java" interface="false" size="54" bugs="1" priority_1="1"/>
+      <ClassStats class="risk.engine.core.Country" sourceFile="Country.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="risk.engine.core.Mission" sourceFile="Mission.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="risk.engine.core.Player" sourceFile="Player.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="risk.engine.core.RiskGame" sourceFile="RiskGame.java" interface="false" size="902" bugs="11" priority_2="7" priority_1="4"/>
+      <ClassStats class="risk.engine.core.Statistic" sourceFile="Statistic.java" interface="false" size="41" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.engine.guishared" total_bugs="6" total_types="10" total_size="1529" priority_2="3" priority_1="3">
+      <ClassStats class="risk.engine.guishared.AboutDialog" sourceFile="AboutDialog.java" interface="false" size="136" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.AboutDialog$1" sourceFile="AboutDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.AboutDialog$2" sourceFile="AboutDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.BrowserLauncher" sourceFile="BrowserLauncher.java" interface="false" size="288" bugs="1" priority_1="1"/>
+      <ClassStats class="risk.engine.guishared.ErdeAnsicht" sourceFile="ErdeAnsicht.java" interface="false" size="495" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.PicturePanel" sourceFile="PicturePanel.java" interface="false" size="359" bugs="3" priority_2="3"/>
+      <ClassStats class="risk.engine.guishared.PicturePanel$countryImage" sourceFile="PicturePanel.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.RiskFileFilter" sourceFile="RiskFileFilter.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="risk.engine.guishared.SimplePrintStream" sourceFile="SimplePrintStream.java" interface="false" size="19" bugs="2" priority_1="2"/>
+      <ClassStats class="risk.engine.guishared.StatsPanel" sourceFile="StatsPanel.java" interface="false" size="88" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.engine.translation" total_bugs="0" total_types="2" total_size="76">
+      <ClassStats class="risk.engine.translation.MapTranslator" sourceFile="MapTranslator.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="risk.engine.translation.TranslationBundle" sourceFile="TranslationBundle.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.tools.mapeditor" total_bugs="9" total_types="10" total_size="1296" priority_2="7" priority_1="2">
+      <ClassStats class="risk.tools.mapeditor.MapEditor" sourceFile="MapEditor.java" interface="false" size="509" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorPanel" sourceFile="MapEditorPanel.java" interface="false" size="323" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews" sourceFile="MapEditorViews.java" interface="false" size="112" bugs="0"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$CardsListModel" sourceFile="MapEditorViews.java" interface="false" size="76" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$ContinentsListModel" sourceFile="MapEditorViews.java" interface="false" size="90" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$ContinentsListModel$1" sourceFile="MapEditorViews.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$CountriesListModel" sourceFile="MapEditorViews.java" interface="false" size="73" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$MissionsListModel" sourceFile="MapEditorViews.java" interface="false" size="79" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$OptionPaneTextArea" sourceFile="MapEditorViews.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.mapeditor.MapEditorViews$ViewTab" sourceFile="MapEditorViews.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.tools.translation" total_bugs="13" total_types="19" total_size="1244" priority_2="12" priority_1="1">
+      <ClassStats class="risk.tools.translation.Collapsible" sourceFile="Collapsible.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="risk.tools.translation.CollapsiblePanel" sourceFile="CollapsiblePanel.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="risk.tools.translation.DoublePanel" sourceFile="DoublePanel.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="risk.tools.translation.MessageTool" sourceFile="MessageTool.java" interface="false" size="379" bugs="3" priority_2="3"/>
+      <ClassStats class="risk.tools.translation.MessageTool$1" sourceFile="MessageTool.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="risk.tools.translation.MessageTool$2" sourceFile="MessageTool.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.tools.translation.MessageTool$3" sourceFile="MessageTool.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="risk.tools.translation.MessageTool$MyRenderer" sourceFile="MessageTool.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.tools.translation.Mtcomm" sourceFile="Mtcomm.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="risk.tools.translation.MyNode" sourceFile="MyNode.java" interface="false" size="133" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="risk.tools.translation.Result" sourceFile="Result.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.tools.translation.RiskComm" sourceFile="RiskComm.java" interface="false" size="113" bugs="3" priority_2="3"/>
+      <ClassStats class="risk.tools.translation.RiskComm$1" sourceFile="RiskComm.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.tools.translation.RiskComm$2" sourceFile="RiskComm.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.tools.translation.TableSize" sourceFile="TableSize.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="risk.tools.translation.YuraTextEditor" sourceFile="YuraTextEditor.java" interface="false" size="269" bugs="2" priority_2="2"/>
+      <ClassStats class="risk.tools.translation.YuraTextEditor$1" sourceFile="YuraTextEditor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.tools.translation.YuraTextEditor$2" sourceFile="YuraTextEditor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="risk.tools.translation.YuraTextEditor$3" sourceFile="YuraTextEditor.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.ui.CommandLine" total_bugs="7" total_types="2" total_size="87" priority_2="5" priority_1="2">
+      <ClassStats class="risk.ui.CommandLine.CommandText" sourceFile="CommandText.java" interface="false" size="71" bugs="7" priority_2="5" priority_1="2"/>
+      <ClassStats class="risk.ui.CommandLine.CommandText$1" sourceFile="CommandText.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.ui.FlashGUI" total_bugs="15" total_types="54" total_size="3166" priority_2="13" priority_1="2">
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog" sourceFile="BattleDialog.java" interface="false" size="265" bugs="2" priority_2="2"/>
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog$1" sourceFile="BattleDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog$2" sourceFile="BattleDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog$3" sourceFile="BattleDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog$4" sourceFile="BattleDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.BattleDialog$BattlePanel" sourceFile="BattleDialog.java" interface="false" size="138" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog" sourceFile="CardsDialog.java" interface="false" size="124" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog$1" sourceFile="CardsDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog$2" sourceFile="CardsDialog.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog$3" sourceFile="CardsDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog$CardPanel" sourceFile="CardsDialog.java" interface="false" size="96" bugs="2" priority_2="2"/>
+      <ClassStats class="risk.ui.FlashGUI.CardsDialog$CardsPanel" sourceFile="CardsDialog.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.FlashGUIApplet" sourceFile="FlashGUIApplet.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.FlashRiskAdapter" sourceFile="FlashRiskAdapter.java" interface="false" size="173" bugs="1" priority_1="1"/>
+      <ClassStats class="risk.ui.FlashGUI.FlashRiskAdapter$1" sourceFile="FlashRiskAdapter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.FlashRiskAdapter$1$1" sourceFile="FlashRiskAdapter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame" sourceFile="GameFrame.java" interface="false" size="541" bugs="2" priority_2="2"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$1" sourceFile="GameFrame.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$2" sourceFile="GameFrame.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$3" sourceFile="GameFrame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$4" sourceFile="GameFrame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$5" sourceFile="GameFrame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$6" sourceFile="GameFrame.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.GameFrame$GameMenuPanel" sourceFile="GameFrame.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.ImageButtonFocusListener" sourceFile="NewGameFrame.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.JoinDialog" sourceFile="JoinDialog.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.JoinDialog$1" sourceFile="JoinDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.JoinDialog$2" sourceFile="JoinDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.JoinDialog$joinPanel" sourceFile="JoinDialog.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MainMenu" sourceFile="MainMenu.java" interface="false" size="302" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="risk.ui.FlashGUI.MainMenu$1" sourceFile="MainMenu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MissionDialog" sourceFile="MissionDialog.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MissionDialog$1" sourceFile="MissionDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MissionDialog$missionPanel" sourceFile="MissionDialog.java" interface="false" size="24" bugs="2" priority_2="2"/>
+      <ClassStats class="risk.ui.FlashGUI.MoveDialog" sourceFile="MoveDialog.java" interface="false" size="146" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.FlashGUI.MoveDialog$1" sourceFile="MoveDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MoveDialog$2" sourceFile="MoveDialog.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MoveDialog$3" sourceFile="MoveDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.MoveDialog$movePanel" sourceFile="MoveDialog.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame" sourceFile="NewGameFrame.java" interface="false" size="399" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$1" sourceFile="NewGameFrame.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$2" sourceFile="NewGameFrame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$3" sourceFile="NewGameFrame.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$4" sourceFile="NewGameFrame.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$LimitedDocument" sourceFile="NewGameFrame.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$MyColor" sourceFile="NewGameFrame.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$NewGameFrameFocusTraversalPolicy" sourceFile="NewGameFrame.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$NewGamePanel" sourceFile="NewGameFrame.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$colorChooserPanel" sourceFile="NewGameFrame.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$playerPanel" sourceFile="NewGameFrame.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.NewGameFrame$playerPanel$1" sourceFile="NewGameFrame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.StatsDialog" sourceFile="StatsDialog.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.StatsDialog$1" sourceFile="StatsDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.FlashGUI.StatsDialog$graphPanel" sourceFile="StatsDialog.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.ui.Increment1GUI" total_bugs="9" total_types="18" total_size="437" priority_2="6" priority_1="3">
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame" sourceFile="Increment1Frame.java" interface="false" size="224" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$1" sourceFile="Increment1Frame.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$10" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$11" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$12" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$1CommandKeyAdapter" sourceFile="Increment1Frame.java" interface="false" size="27" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$2" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$3" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$4" sourceFile="Increment1Frame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$5" sourceFile="Increment1Frame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$6" sourceFile="Increment1Frame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$7" sourceFile="Increment1Frame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$8" sourceFile="Increment1Frame.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$9" sourceFile="Increment1Frame.java" interface="false" size="21" bugs="1" priority_1="1"/>
+      <ClassStats class="risk.ui.Increment1GUI.Increment1Frame$Increment1RiskAdapter" sourceFile="Increment1Frame.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.PrintDialog" sourceFile="PrintDialog.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.PrintDialog$1" sourceFile="PrintDialog.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="risk.ui.Increment1GUI.PrintDialog$Printer" sourceFile="PrintDialog.java" interface="false" size="19" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="risk.ui.SimpleGUI" total_bugs="11" total_types="18" total_size="520" priority_2="8" priority_1="3">
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI" sourceFile="RiskGUI.java" interface="false" size="259" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$1" sourceFile="RiskGUI.java" interface="false" size="47" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$10" sourceFile="RiskGUI.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$11" sourceFile="RiskGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$1CommandKeyAdapter" sourceFile="RiskGUI.java" interface="false" size="25" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$2" sourceFile="RiskGUI.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$3" sourceFile="RiskGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$4" sourceFile="RiskGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$5" sourceFile="RiskGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$6" sourceFile="RiskGUI.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$7" sourceFile="RiskGUI.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$8" sourceFile="RiskGUI.java" interface="false" size="21" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$9" sourceFile="RiskGUI.java" interface="false" size="22" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$GamePanel" sourceFile="RiskGUI.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$GamePanel$1" sourceFile="RiskGUI.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$GamePanel$2" sourceFile="RiskGUI.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$GamePanel$3" sourceFile="RiskGUI.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SimpleGUI.RiskGUI$playersPanel" sourceFile="RiskGUI.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="risk.ui.SwingGUI" total_bugs="19" total_types="67" total_size="3065" priority_2="15" priority_1="4">
+      <ClassStats class="risk.ui.SwingGUI.BugsPanel" sourceFile="BugsPanel.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.CardsDialog" sourceFile="CardsDialog.java" interface="false" size="125" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.CardsDialog$1" sourceFile="CardsDialog.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.CardsDialog$2" sourceFile="CardsDialog.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.CardsDialog$3" sourceFile="CardsDialog.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.CardsDialog$CardPanel" sourceFile="CardsDialog.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.FX3DPanel" sourceFile="FX3DPanel.java" interface="false" size="93" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.FX3DPanel$1" sourceFile="FX3DPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIApplet" sourceFile="SwingGUIApplet.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIFrame" sourceFile="SwingGUIFrame.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel" sourceFile="SwingGUIPanel.java" interface="false" size="336" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$2" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab" sourceFile="SwingGUIPanel.java" interface="false" size="203" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$ConsoleTab$1" sourceFile="SwingGUIPanel.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$DebugTab" sourceFile="SwingGUIPanel.java" interface="false" size="135" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$DebugTab$1" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$GamePanel" sourceFile="SwingGUIPanel.java" interface="false" size="201" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$GameTab" sourceFile="SwingGUIPanel.java" interface="false" size="361" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel" sourceFile="SwingGUIPanel.java" interface="false" size="262" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$10" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$11" sourceFile="SwingGUIPanel.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$2" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$3" sourceFile="SwingGUIPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$4" sourceFile="SwingGUIPanel.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$5" sourceFile="SwingGUIPanel.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$6" sourceFile="SwingGUIPanel.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$7" sourceFile="SwingGUIPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$8" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$9" sourceFile="SwingGUIPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SetupPanel$NamedColor" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$StatisticsTab" sourceFile="SwingGUIPanel.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$SwingRiskAdapter" sourceFile="SwingGUIPanel.java" interface="false" size="153" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$attackPanel" sourceFile="SwingGUIPanel.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$attackPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$capitalPanel" sourceFile="SwingGUIPanel.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$capitalPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$defendPanel" sourceFile="SwingGUIPanel.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$endgoPanel" sourceFile="SwingGUIPanel.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$endgoPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$movePanel" sourceFile="SwingGUIPanel.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$movePanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$movePanel$2" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$placeArmiesPanel" sourceFile="SwingGUIPanel.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$placeArmiesPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$playersPanel" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$rollPanel" sourceFile="SwingGUIPanel.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$rollPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel" sourceFile="SwingGUIPanel.java" interface="false" size="60" bugs="1" priority_2="1"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$tacMovePanel$2" sourceFile="SwingGUIPanel.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$tradeCardsPanel" sourceFile="SwingGUIPanel.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$tradeCardsPanel$1" sourceFile="SwingGUIPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUIPanel$winnerPanel" sourceFile="SwingGUIPanel.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.SwingGUITab" sourceFile="SwingGUITab.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue" sourceFile="TCPopupEventQueue.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue$BasicAction" sourceFile="TCPopupEventQueue.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue$CopyAction" sourceFile="TCPopupEventQueue.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue$CutAction" sourceFile="TCPopupEventQueue.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue$PasteAction" sourceFile="TCPopupEventQueue.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TCPopupEventQueue$SelectAllAction" sourceFile="TCPopupEventQueue.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TestPanel" sourceFile="TestPanel.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TestPanel$1" sourceFile="TestPanel.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TestPanel$2" sourceFile="TestPanel.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TestPanel$3" sourceFile="TestPanel.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="risk.ui.SwingGUI.TestPanel$4" sourceFile="TestPanel.java" interface="false" size="38" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1072" invocations="1627" avgMicrosecondsPerInvocation="659" maxMicrosecondsPerInvocation="397812" standardDeviationMircosecondsPerInvocation="9934"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="698" invocations="2647" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="15574" standardDeviationMircosecondsPerInvocation="630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="661" invocations="1687" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="27812" standardDeviationMircosecondsPerInvocation="1467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="640" invocations="1627" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="31545" standardDeviationMircosecondsPerInvocation="1528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="607" invocations="1628" avgMicrosecondsPerInvocation="373" maxMicrosecondsPerInvocation="17893" standardDeviationMircosecondsPerInvocation="1152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="562" invocations="938" avgMicrosecondsPerInvocation="600" maxMicrosecondsPerInvocation="13064" standardDeviationMircosecondsPerInvocation="1142"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="472" invocations="1653" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="19483" standardDeviationMircosecondsPerInvocation="928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="470" invocations="3092" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="23136" standardDeviationMircosecondsPerInvocation="513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="341" invocations="1628" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="18321" standardDeviationMircosecondsPerInvocation="585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="315" invocations="1043" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="9639" standardDeviationMircosecondsPerInvocation="710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="296" invocations="2" avgMicrosecondsPerInvocation="148273" maxMicrosecondsPerInvocation="172317" standardDeviationMircosecondsPerInvocation="24044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="184" invocations="2653" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="509" standardDeviationMircosecondsPerInvocation="38"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="168" invocations="1627" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="6626" standardDeviationMircosecondsPerInvocation="356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="148" invocations="938" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="2354" standardDeviationMircosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="138" invocations="2585" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="2776" standardDeviationMircosecondsPerInvocation="102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="114" invocations="938" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="22835" standardDeviationMircosecondsPerInvocation="755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="112" invocations="1057" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="1406" standardDeviationMircosecondsPerInvocation="138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="108" invocations="938" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="2252" standardDeviationMircosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="106" invocations="938" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="23707" standardDeviationMircosecondsPerInvocation="784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="105" invocations="225" avgMicrosecondsPerInvocation="469" maxMicrosecondsPerInvocation="4903" standardDeviationMircosecondsPerInvocation="752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="104" invocations="225" avgMicrosecondsPerInvocation="464" maxMicrosecondsPerInvocation="6208" standardDeviationMircosecondsPerInvocation="682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="95" invocations="225" avgMicrosecondsPerInvocation="424" maxMicrosecondsPerInvocation="6658" standardDeviationMircosecondsPerInvocation="746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="95" invocations="938" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="11023" standardDeviationMircosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="94" invocations="225" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="11943" standardDeviationMircosecondsPerInvocation="1050"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="91" invocations="225" avgMicrosecondsPerInvocation="408" maxMicrosecondsPerInvocation="6901" standardDeviationMircosecondsPerInvocation="746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="86" invocations="1627" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="1953" standardDeviationMircosecondsPerInvocation="132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="85" invocations="938" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="2016" standardDeviationMircosecondsPerInvocation="170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="85" invocations="116" avgMicrosecondsPerInvocation="735" maxMicrosecondsPerInvocation="5868" standardDeviationMircosecondsPerInvocation="1207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="84" invocations="1340" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="3491" standardDeviationMircosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="84" invocations="225" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="11500" standardDeviationMircosecondsPerInvocation="930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="84" invocations="225" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="17136" standardDeviationMircosecondsPerInvocation="1247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="79" invocations="225" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="14206" standardDeviationMircosecondsPerInvocation="1200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSqlInjection" totalMilliseconds="78" invocations="225" avgMicrosecondsPerInvocation="349" maxMicrosecondsPerInvocation="26289" standardDeviationMircosecondsPerInvocation="2348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="74" invocations="225" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="3439" standardDeviationMircosecondsPerInvocation="518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="70" invocations="938" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="1435" standardDeviationMircosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="67" invocations="225" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="11072" standardDeviationMircosecondsPerInvocation="1355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRoughConstants" totalMilliseconds="66" invocations="225" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="4916" standardDeviationMircosecondsPerInvocation="506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InefficientIndexOf" totalMilliseconds="65" invocations="225" avgMicrosecondsPerInvocation="292" maxMicrosecondsPerInvocation="7136" standardDeviationMircosecondsPerInvocation="625"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
